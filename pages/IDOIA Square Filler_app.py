@@ -72,7 +72,7 @@ def fill_square_image(img):
 
 
 # Handle first image
-url = "https://github.com/webdevserv/portfolio_idoia/blob/main/images/cowportrait.jpg"
+url = "https://github.com/webdevserv/portfolio_idoia/blob/main/images/cowportrait.jpg" 
 # Handle second image
 url2 = "https://github.com/webdevserv/portfolio_idoia/blob/main/images/cowlandsscape.jpg"
 
