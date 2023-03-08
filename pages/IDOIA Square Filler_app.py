@@ -70,11 +70,16 @@ def fill_square_image(img):
       #newimg = Image.open(newimg)
       return newimg
 
+# Handle first image
+#url = "https://raw.githubusercontent.com/jeffheaton/t81_558_deep_learning/master/photos/hickory_home.jpg"
+# Handle second image
+#url2 = "https://raw.githubusercontent.com/jeffheaton/t81_558_deep_learning/master/photos/landscape.jpg"
+
 
 # Handle first image
-url = "https://raw.githubusercontent.com/webdevserv/portfolio_idoia/main/images/cowportrait.jpg" 
+url = "https://raw.githubusercontent.com/webdevserv/portfolio_idoia/main/images/cowportrait.jpg?token=GHSAT0AAAAAAB7QEI6RZHIECVEUUGA6YWBUZAI6JPQ" 
 # Handle second image
-url2 = "https://raw.githubusercontent.com/webdevserv/portfolio_idoia/main/images/cowlandsscape.jpg"
+url2 = "https://raw.githubusercontent.com/webdevserv/portfolio_idoia/main/images/cowlandsscape.jpg?token=GHSAT0AAAAAAB7QEI6RCZJCR4SJOAK5RYZYZAI6IRA"
 
 st.title('Square image and use color Filler if needed')
 
