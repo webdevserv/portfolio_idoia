@@ -76,7 +76,6 @@ url = "https://github.com/webdevserv/portfolio_idoia/blob/main/images/cowportrai
 # Handle second image
 url2 = "https://github.com/webdevserv/portfolio_idoia/blob/main/images/cowlandsscape.jpg"
 
-# page thttps://github.com/webdevserv/portfolio_idoia/blob/main/images/cowlandsscape.jpg
 st.title('Square image and use color Filler if needed')
 
 # text input box for image recognition
