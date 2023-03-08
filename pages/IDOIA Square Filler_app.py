@@ -72,9 +72,9 @@ def fill_square_image(img):
 
 
 # Handle first image
-url = "https://github.com/webdevserv/portfolio_idoia/blob/main/images/cowportrait.jpg" 
+url = "https://raw.githubusercontent.com/webdevserv/portfolio_idoia/main/images/cowportrait.jpg" 
 # Handle second image
-url2 = "https://github.com/webdevserv/portfolio_idoia/blob/main/images/cowlandsscape.jpg"
+url2 = "https://raw.githubusercontent.com/webdevserv/portfolio_idoia/main/images/cowlandsscape.jpg"
 
 st.title('Square image and use color Filler if needed')
 
