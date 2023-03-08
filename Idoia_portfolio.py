@@ -9,27 +9,11 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 st.set_page_config(
-   page_title="Stremlit Idoia portfolio App",
+   page_title="Streamlit Idoia portfolio App",
    page_icon="😎",layout="wide",initial_sidebar_state="expanded"
 )
 
-# left container
-#st.sidebar.success("Welcome.")
-# my_input=""
-# if "my_input" not in st.session_state:
-#  st.session_state["my_input"] = ""
-# else:
-#  my_input = st.text_input("What is your name?", st.session_state["my_input"])
-#  submit = st.button("Submit")
-#  if submit:
-   # st.session_state["my_input"] = my_input
-   #st.write("You have entered: ", my_input)
 
-# if len(my_input)> 1:    
-   # st.header("Hi there " + my_input+"!")
-# else:
-   # st.header("Hi there!")
-   
 st.subheader("Streamlit Idoia Web Portfolio :wave:")
 with st.spinner("Loading..."):
         time.sleep(1)
