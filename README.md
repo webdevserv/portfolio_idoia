@@ -1,2 +1,5 @@
-# portfolio_idoia
-Idoia Portfolio showcasing ML models and Image preprocessing in Web Apps
+pip install streamlit --upgrade
+
+streamlit run idoia*.py
+
+streamlit run id(+tab)
