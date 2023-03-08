@@ -11,7 +11,6 @@ from io import BytesIO
 #import os
 color=(0,0,255)
 
-
 def fill_square_image(img):
     imgsz = [img.height, img.width]
 
@@ -70,29 +69,46 @@ def fill_square_image(img):
       #newimg = Image.open(newimg)
       return newimg
 
-# Handle first image
-url = "https://raw.githubusercontent.com/webdevserv/images_video/main/cowportrait.jpg" 
-# Handle second image
-url2 = "https://raw.githubusercontent.com/webdevserv/images_video/main/cowlandscape.jpg"
 
-st.title('Square image and use color Filler if needed')
+# ---- TABS ----
+tab1, tab2 = st.tabs(["Demo","Application"])
 
-# text input box for image recognition
-img_description = st.text('Image will be squared with color filler if applicable.')
-
-if st.button('Square and Fill'):  
-  response = requests.get(url)
-  img = Image.open(BytesIO(response.content))
-  img.load()
-
-  generated_img = fill_square_image(img)
-  st.image(generated_img)
-
-  response = requests.get(url2)
-  img = Image.open(BytesIO(response.content))
-  img.load()
-
-  generated_img = fill_square_image(img)
-  st.image(generated_img)
+with tab1:
+   st.subheader("Demo")
    
-    
+   # Handle first image
+   url = "https://raw.githubusercontent.com/webdevserv/images_video/main/cowportrait.jpg" 
+   # Handle second image
+   url2 = "https://raw.githubusercontent.com/webdevserv/images_video/main/cowlandscape.jpg"
+
+   st.subheader('Square image and use color filler if needed')
+
+   img_description = st.text('Image will be squared with color filler if applicable.')
+
+   if st.button('Square and Fill Demo'):  
+    response = requests.get(url)
+    img = Image.open(BytesIO(response.content))
+    img.load()
+
+    generated_img = fill_square_image(img)
+    st.image(generated_img)
+
+    response = requests.get(url2)
+    img = Image.open(BytesIO(response.content))
+    img.load()
+
+    generated_img = fill_square_image(img)
+    st.image(generated_img)
+   
+
+with tab2:
+  st.subheader("Square it!")
+  st.subheader('Square image and use color Filler if needed')
+  img_description = st.text('Image will be squared with color filler if applicable.')
+  uploaded_file = st.file_uploader("Upload a JPG image to square and fill with color.", type=['jpg'])
+
+  if uploaded_file is not None: 
+   img = Image.open(uploaded_file)
+   img.load()
+   generated_img = fill_square_image(img)
+   st.image(generated_img)
