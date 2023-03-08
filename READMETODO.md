@@ -1,45 +1,20 @@
 # T81 558:Applications of Deep Neural Networks
-[Washington University in St. Louis](http://www.wustl.edu)
+[Idoia Lerchundi, New York, USA](http://www.wustl.e)
 
-Instructor: [Jeff Heaton](https://sites.wustl.edu/jeffheaton/)
+Instructor: [Jeff Heaton](https://live-webdevserv.pantheonsite.io)
 
-**The content of this course changes as technology evolves**, to keep up to date with changes [follow me on GitHub](https://github.com/jeffheaton).
+**The content of this page changes as technology evolves**, to keep up to date with changes [follow me on GitHub](https://github.com/webdevserv/portfolio_idoia).
 
 * Section 1. Spring 2023, Monday, 2:30 PM, Location: Eads / 216 
 * Section 2. Spring 2023, Online
 
-# Course Description
+# portfolio_idoia
 
-Deep learning is a group of exciting new technologies for neural networks. Through a combination of advanced training techniques and neural network architectural components, it is now possible to create neural networks that can handle tabular data, images, text, and audio as both input and output. Deep learning allows a neural network to learn hierarchies of information in a way that is like the function of the human brain. This course will introduce the student to classic neural network structures, Convolution Neural Networks (CNN), Long Short-Term Memory (LSTM), Gated Recurrent Neural Networks (GRU), General Adversarial Networks (GAN) and reinforcement learning. Application of these architectures to computer vision, time series, security, natural language processing (NLP), and data generation will be covered. High Performance Computing (HPC) aspects will demonstrate how deep learning can be leveraged both on graphical processing units (GPUs), as well as grids. Focus is primarily upon the application of deep learning to problems, with some introduction to mathematical foundations. Students will use the Python programming language to implement deep learning using Google TensorFlow and Keras. It is not necessary to know Python prior to this course; however, familiarity of at least one programming language is assumed. This course will be delivered in a hybrid format that includes both classroom and online instruction.
+As ML is an interest of mine, I am creating web apps in streamlit with python code of useful applications. I have an AI degree and I am passionate about web and ML. Django will be also used shortly to deploy some of the models.
 
-# Textbook
-
-The complete text for this course is here on GitHub. This same material is also available in [book format](https://www.heatonresearch.com/book/applications-deep-neural-networks-keras.html). The course textbook is “Applications of Deep Neural networks with Keras“, ISBN 9798416344269.
-
-If you would like to cite the material from this course/book, please use the following BibTex citation:
-
-```
-@misc{heaton2020applications,
-    title={Applications of Deep Neural Networks},
-    author={Jeff Heaton},
-    year={2020},
-    eprint={2009.05673},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
-}
-```
-
-# Objectives
-
-1. Explain how neural networks (deep and otherwise) compare to other machine learning models.
-2. Determine when a deep neural network would be a good choice for a particular problem.
-3. Demonstrate your understanding of the material through a final project uploaded to GitHub.
-
-# Syllabus
-This syllabus presents the expected class schedule, due dates, and reading assignments.  [Download current syllabus.](https://data.heatonresearch.com/wustl/jheaton-t81-558-spring-2023-syllabus.pdf)
-
-Module|Content
+File/Folder | Content
 ---|---
+
 [Module 1](t81_558_class_01_1_overview.ipynb)<br>**Meet on 01/23/2023** | **Module 1: Python Preliminaries**<ul><li>Part 1.1: Course Overview<li>Part 1.2: Introduction to Python<li>Part 1.3: Python Lists, Dictionaries, Sets & JSON<li>Part 1.4: File Handling<li>Part 1.5: Functions, Lambdas, and Map/ReducePython Preliminaries<li>**We will meet on campus this week! (first meeting)**</ul>
 [Module 2](t81_558_class_02_1_python_pandas.ipynb)<br>Week of 01/30/2023 | **Module 2: Python for Machine Learning**<ul><li>	Part 2.1: Introduction to Pandas for Deep Learning<li>Part 2.2: Encoding Categorical Values in Pandas<li>Part 2.3: Grouping, Sorting, and Shuffling<li>Part 2.4: Using Apply and Map in Pandas<li>Part 2.5: Feature Engineering in Padas<li>[Module 1 Program](https://github.com/jeffheaton/t81_558_deep_learning/blob/master/assignments/assignment_yourname_class1.ipynb) due: 01/31/2023<li> Icebreaker due: 01/31/2023</ul>
 [Module 3](t81_558_class_03_1_neural_net.ipynb)<br>Week of 02/06/2023 | **Module 3: TensorFlow and Keras for Neural Networks**<ul><li>Part 3.1: Deep Learning and Neural Network Introduction<li>Part 3.2: Introduction to Tensorflow & Keras<li>Part 3.3: Saving and Loading a Keras Neural Network<li>Part 3.4: Early Stopping in Keras to Prevent Overfitting<li>Part 3.5: Extracting Keras Weights and Manual Neural Network Calculation<li>[Module 2: Program](https://github.com/jeffheaton/t81_558_deep_learning/blob/master/assignments/assignment_yourname_class2.ipynb) due: 02/07/2023</ul>
@@ -56,5 +31,5 @@ Module|Content
 
 # Datasets
 
-* [Datasets can be downloaded here](https://data.heatonresearch.com/data/t81-558/index.html)
+* [Datasets can be downloaded here](www.html.link)
 

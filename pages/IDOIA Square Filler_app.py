@@ -15,7 +15,7 @@ def fill_square_image(img):
     imgsz = [img.height, img.width]
 
     original_size = imgsz
-    print("original image")
+    #print("original image")
     #img = Image.open(img)
     #display(img)
     #print('size is ')
