@@ -72,11 +72,11 @@ def fill_square_image(img):
 
 
 # Handle first image
-url = "https://raw.githubusercontent.com/jeffheaton/t81_558_deep_learning/master/photos/hickory_home.jpg"
+url = "https://github.com/webdevserv/portfolio_idoia/blob/main/images/cowportrait.jpg"
 # Handle second image
-url2 = "https://raw.githubusercontent.com/jeffheaton/t81_558_deep_learning/master/photos/landscape.jpg"
+url2 = "https://github.com/webdevserv/portfolio_idoia/blob/main/images/cowlandsscape.jpg"
 
-# page title
+# page thttps://github.com/webdevserv/portfolio_idoia/blob/main/images/cowlandsscape.jpg
 st.title('Square image and use color Filler if needed')
 
 # text input box for image recognition
