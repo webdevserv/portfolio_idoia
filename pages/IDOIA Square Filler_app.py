@@ -11,7 +11,7 @@ from io import BytesIO
 #import os
 color=(0,0,255)
 
-#warps does not use filler color
+
 def fill_square_image(img):
     imgsz = [img.height, img.width]
 
@@ -33,13 +33,13 @@ def fill_square_image(img):
       #print("height is bigger than width")
       area = (0, 0, img.width + (img.height - img.width),img.height)
       cropped_img = img.crop(area)
-      print("area is")
-      print(area)
+      #print("area is")
+      #print(area)
       newimgsz = [cropped_img.height, cropped_img.width]
     
       #round(avg_color)
-      print("round avg_color")
-      print(round(avg_color[0]))
+      #print("round avg_color")
+      #print(round(avg_color[0]))
       newimg = Image.new('RGB', ([newimgsz[1],newimgsz[0]]), (round(avg_color[0]), round(avg_color[1]), round(avg_color[2])))
       #print("new image with filler color")
       #display(newimg)
@@ -47,7 +47,7 @@ def fill_square_image(img):
       newpos = (img.height-img.width)
       newpos = newpos/2
       newimg.paste(img,(int(newpos),0))
-      print("new square image with filler color")
+      #print("new square image with filler color")
       #display(newimg)
       #newimg = Image.open(newimg)
       return newimg
@@ -65,7 +65,7 @@ def fill_square_image(img):
       newpos = (img.width-img.height)
       newpos = newpos/2
       newimg.paste(img,(0,(int(newpos))))
-      print("new square image with filler color")
+      #print("new square image with filler color")
       #display(newimg)
       #newimg = Image.open(newimg)
       return newimg
