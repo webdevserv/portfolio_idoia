@@ -44,7 +44,7 @@ def view_dzi():
         tileSources: "https://raw.githubusercontent.com/webdevserv/images_video/main/old/cowportrait.dzi"                
     });
    </script> 
-   <div id="openseadragon1" style="width: 800px; height: 600px;"></div>
+   <div id="openseadragon1" style="width: 900px; height: 800px;"></div>
    """,
    height=600,
    )
