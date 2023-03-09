@@ -81,7 +81,7 @@ with tab1:
    # Handle second image
    url2 = "https://raw.githubusercontent.com/webdevserv/images_video/main/cowlandscape.jpg"
 
-   st.subheader('Square image and use color filler if needed')
+   st.subheader('Square the image')
 
    img_description = st.text('Image will be squared with color filler if applicable.')
 
