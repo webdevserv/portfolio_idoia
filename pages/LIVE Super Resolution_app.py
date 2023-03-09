@@ -35,6 +35,7 @@ def preprocess_image(image_path):
  #uploaded image displays  but tensorflow requires the full path to be able to handle it, so a hardcode downloads folder path is passed.
 
  #print("this is what is passed to " + image_path)
+ print(image_path)
  hr_image = tf.image.decode_image(tf.io.read_file(image_path))
   # If PNG, remove the alpha channel. The model only supports
   # images with 3 color channels.
@@ -125,7 +126,7 @@ def main():
     if app_mode == "Process Single JPG Image":
         st.subheader("Enhanced Super Resolution GAN Process Single Image - TensorFlow implementation")
         #readme_text.empty()
-        uploaded_file = st.file_uploader("Upload a low resolution JPG image. e.g. Select 1.jpg from sample folder.", type=['jpg'])
+        uploaded_file = st.file_uploader("Upload a low resolution JPG image. e.g. Select 1_for_super_resolution.jpg from sample folder.", type=['jpg'])
 
         if uploaded_file is not None:            
             lr_image = Image.open(uploaded_file)
@@ -137,7 +138,7 @@ def main():
             if st.button('Generate SR'):                               
                 #filename = uploaded_file.name
                 #hardcoded upload folder
-                filepath = "C:/Users/idoia/Downloads/"
+                filepath = "C:/Users/idoia/OneDrive/CAREER/github/portfolio_idoia/samples/"
                 #print("filepath " + filepath)
                 #print("filename " + filename)
                 imagepath = filepath + uploaded_file.name
