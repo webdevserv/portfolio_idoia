@@ -30,6 +30,19 @@ File/Folder | Content
 assett/....................useful images for the applications demonstrations
 screens/...................screenshots of the application
 
+
+# Instructions
+
+"""go to app folder"""
+cd C:\Users\idoia\OneDrive\CAREER\github\portfolio_idoia
+
+""" make sure streamlit is uptodate """
+pip install streamlit --upgrade
+
+""" run the app """
+streamlit run idoia*.py
+
+
 # Datasets
 
 * [Datasets can be downloaded here](www.html.link)

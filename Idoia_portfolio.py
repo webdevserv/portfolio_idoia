@@ -60,7 +60,7 @@ with tab2:
 
 with col1:
    st.image(img_flat)
-   st.write("By (www.idoia.com)")
+   st.write("github (https://github.com/webdevserv/portfolio_idoia)")
 
 with col2:
    st.write(
@@ -79,7 +79,7 @@ with tab3:
 
 with col1:
   st.image(img_flat)
-  st.write("By (www.idoia.com)")
+  st.write("github (https://github.com/webdevserv/portfolio_idoia)")
 
 with col2:
    st.write(
