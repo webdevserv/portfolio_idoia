@@ -23,8 +23,10 @@ import urllib.request
 SAVED_MODEL_PATH = "https://tfhub.dev/captain-pool/esrgan-tf2/1"
 
 st.set_page_config(
-   layout="wide"
+   page_title="Streamlit iCodeIdoia",
+   page_icon="images/icon.png",layout="wide",initial_sidebar_state="expanded"
 )
+
 st.image("images/banner.jpg")
 
 def preprocess_image(image_path):

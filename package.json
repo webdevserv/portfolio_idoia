@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@types/openseadragon": "^3.0.5"
+  }
+}

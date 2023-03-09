@@ -13,7 +13,7 @@ st.set_page_config(
    page_icon="images/icon.png",layout="wide",initial_sidebar_state="expanded"
 )
 st.image("images/banner.jpg")
-st.subheader("Streamlit Idoia Web Portfolio :wave:")
+st.subheader("Streamlit iCodeIdoia Portfolio :wave:")
 with st.spinner("Loading..."):
       time.sleep(1)
 
