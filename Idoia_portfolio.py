@@ -10,9 +10,8 @@ def local_css(file_name):
 
 st.set_page_config(
    page_title="Streamlit Idoia portfolio App",
-   page_icon="😎",layout="wide",initial_sidebar_state="expanded"
+   page_icon="images/icon.png",layout="wide",initial_sidebar_state="expanded"
 )
-
 
 st.subheader("Streamlit Idoia Web Portfolio :wave:")
 with st.spinner("Loading..."):
@@ -29,8 +28,7 @@ with st.container():
  st.write("I feel passionate about Web, ML, Data Science. My degree in in Artificial Intelligence. My work experience is on Web front and back end.\
            I enjoy creating web apps with ML models. I find GANs fascinating and also enjoy making videos with latent space interpolations."
     )
- st.write("Learn more Word Press website https://dev-webdevserv.pantheonsite.io/")
- #https://dev-webfrontback.pantheonsite.io/
+ st.write("Learn more Word Press website https://live-webdevserv.pantheonsite.io")
 
 # ---- TABS ----
 tab1, tab2, tab3 = st.tabs(["Projects","Experience","Bio snap"])
@@ -62,7 +60,6 @@ with tab2:
 
 with col1:
    st.image(img_flat)
-   #st.write("""By <a href="https://unsplash.com/photos/0g7BJEXq7sU" target="_blank" rel="noopener noreferrer">@phonvanna</a>""")
    st.write("By (www.idoia.com)")
 
 with col2:
@@ -82,7 +79,6 @@ with tab3:
 
 with col1:
   st.image(img_flat)
-  #st.write("""By <a href="https://unsplash.com/photos/0g7BJEXq7sU" target="_blank" rel="noopener noreferrer">@phonvanna</a>
   st.write("By (www.idoia.com)")
 
 with col2:
@@ -92,20 +88,3 @@ with col2:
 There, I created custom websites for prestigious clients such as British Airways, Dupont, UBS, Cisco, Virgin and more. After the dot-com bubble burst, I became a certified MCSD and worked as 
 a freelancer using both back end and front end skills.  
   """) 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

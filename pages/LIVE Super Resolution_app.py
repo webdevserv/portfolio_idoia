@@ -26,7 +26,6 @@ st.set_page_config(
    layout="wide"
 )
 
-#def preprocess_image(image_path):
 def preprocess_image(image_path):
  """ Loads image from path and preprocesses to make it model ready
       Args:
