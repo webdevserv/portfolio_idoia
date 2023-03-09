@@ -70,7 +70,6 @@ def fill_square_image(img):
       #newimg = Image.open(newimg)
       return newimg
 
-
 # ---- TABS ----
 tab1, tab2 = st.tabs(["Demo","Application"])
 
@@ -82,9 +81,8 @@ with tab1:
    # Handle second image
    url2 = "https://raw.githubusercontent.com/webdevserv/images_video/main/cowlandscape.jpg"
 
-   st.subheader('Square the image')
-
-   img_description = st.text('Image will be squared with color filler if applicable.')
+   st.subheader("Square the image")
+   img_description = st.text('Image will be squared with color filler where applicable.')
 
    if st.button('Square and Fill Demo'):  
     response = requests.get(url)
@@ -103,9 +101,8 @@ with tab1:
    
 
 with tab2:
-  st.subheader("Square it!")
-  st.subheader('Square image and use color Filler if needed')
-  img_description = st.text('Image will be squared with color filler if applicable.')
+  st.subheader("Square the image")
+  img_description = st.text('Image will be squared with color filler where applicable.')
   uploaded_file = st.file_uploader("Upload a JPG image to square and fill with color.", type=['jpg'])
 
   if uploaded_file is not None: 

@@ -35,7 +35,7 @@ def preprocess_image(image_path):
  #uploaded image displays  but tensorflow requires the full path to be able to handle it, so a hardcode downloads folder path is passed.
 
  #print("this is what is passed to " + image_path)
- print(image_path)
+ #print(image_path)
  hr_image = tf.image.decode_image(tf.io.read_file(image_path))
   # If PNG, remove the alpha channel. The model only supports
   # images with 3 color channels.
@@ -58,8 +58,8 @@ def save_image(image, filename):
   if not isinstance(image, Image.Image):
     image = tf.clip_by_value(image, 0, 255)
     image = Image.fromarray(tf.cast(image, tf.uint8).numpy())
-  image.save("%s.jpg" % filename)
-  print("Saved as %s.jpg" % filename)
+  #image.save("%s.jpg" % filename)
+  #print("Saved as %s.jpg" % filename)
 
 #%matplotlib inline
 def plot_image(image, title=""):
