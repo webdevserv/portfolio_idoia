@@ -12,10 +12,10 @@ st.set_page_config(
    page_title="Streamlit Idoia portfolio App",
    page_icon="images/icon.png",layout="wide",initial_sidebar_state="expanded"
 )
-
+st.image("images/banner.jpg")
 st.subheader("Streamlit Idoia Web Portfolio :wave:")
 with st.spinner("Loading..."):
-        time.sleep(1)
+      time.sleep(1)
 
 # ---- LOAD ASSETS ----
 local_css("style/style.css")
