@@ -9,8 +9,10 @@ import streamlit as st
 openai.api_key = "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"
 
 st.set_page_config(
-   layout="wide"
+   page_title="Streamlit iCodeIdoia",
+   page_icon="images/icon.png",layout="wide",initial_sidebar_state="expanded"
 )
+
 st.image("images/banner.jpg")
 
 def generate_image(image_prompt):
@@ -29,7 +31,7 @@ def generate_image(image_prompt):
  img = Image.open("image.png")
  return img
 
-st.subheader('DALL.E - Image Generation - OpenAI')
+st.subheader('DALL.E - Text-to-Image Generation - OpenAI')
 
 # text input box for image recognition
 img_description = st.text_input('Enter image prompt. e.g. dancing with wolves on a starry night')
