@@ -25,6 +25,7 @@ SAVED_MODEL_PATH = "https://tfhub.dev/captain-pool/esrgan-tf2/1"
 st.set_page_config(
    layout="wide"
 )
+st.image("images/banner.jpg")
 
 def preprocess_image(image_path):
  """ Loads image from path and preprocesses to make it model ready

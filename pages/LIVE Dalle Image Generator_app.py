@@ -11,6 +11,7 @@ openai.api_key = "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"
 st.set_page_config(
    layout="wide"
 )
+st.image("images/banner.jpg")
 
 def generate_image(image_prompt):
  img_response = openai.Image.create(

@@ -10,6 +10,7 @@ from io import BytesIO
 
 #import os
 color=(0,0,255)
+st.image("images/banner.jpg")
 
 def fill_square_image(img):
     imgsz = [img.height, img.width]
