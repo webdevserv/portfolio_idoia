@@ -48,6 +48,24 @@ def view_cow():
    height=600,
    )
 
+def view_ladies():
+  #move dzi and pyramid folder to central rep
+  components.html("""
+  <div id="openseadragon1" style="width: 800px; height: 600px;"></div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    var viewer = OpenSeadragon({
+        id: "openseadragon1",
+        prefixUrl: "//openseadragon.github.io/openseadragon/images/",
+        tileSources: "https://raw.githubusercontent.com/webdevserv/images_video/main/old/ontario.dzi"                
+    });
+   </script> 
+   <div id="openseadragon1" style="width: 800px; height: 600px;"></div>
+   """,
+   height=600,
+   )
+
 
 #viewer of *.dzi deep zoom image
 def view_dzi():
@@ -169,9 +187,11 @@ def main():
  with tab3:
   st.subheader("OpenSeadDragon deepzoom viewer/ View cow")
   img_description = st.text('Instructions: Move around the slide by dragging, and use the mouse wheel to zoom.')
-  view_cow()
+  view_ladies()
   #eskuz; change dzi content to "Format":"jpg","Overlap":"2",TileSize":"256","Size":{"Height": "9221","Width":"7026"}
   st.caption("Special thanks for openseadragon viewer; https://github.com/openseadragon")
+  st.caption("Image, 1930 Cannery, Ontario.")
+  
   
   
 
