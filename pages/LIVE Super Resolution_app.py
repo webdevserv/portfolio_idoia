@@ -113,8 +113,6 @@ def display_time(timeinfo):
    time_info = "Time taken: %f" % (timeinfo)
    st.write(time_info)
 
-
-# Streamlit execution starts in main() function.
 def main():     
     #ILP
     # Render the readme as markdown using st.markdown.

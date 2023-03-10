@@ -17,14 +17,16 @@ SOURCE = "https://raw.githubusercontent.com/webdevserv/images_video/main/cowport
 #creator of *.dzi Microsoft deep zoom image
 def create_deepzoom_img(SOURCE): 
  creator = deepzoom.ImageCreator(
-    tile_size=256,
-    tile_overlap=2,
-    tile_format="png",
+    tile_size=254,
+    tile_overlap=1,
+    tile_format="jpg",
     image_quality=0.8,
-    resize_filter="bicubic",
+    resize_filter="bicubic"        
  )
  # Create Deep Zoom image pyramid from source
  # if not a single filename it does not save the slices
+
+ ###########See if it can create it in images/dzi
  creator.create(SOURCE, "cowportrait.dzi")
 
 #https://openseadragon.github.io/docs/
@@ -50,17 +52,18 @@ def view_dzi():
 # Streamlit execution starts in main() function.
 def main():      
 # ---- TABS ----
- tab1, tab2 = st.tabs(["Deepzoom viewer","Create deepzoom image (.dzi)"])
+ tab1, tab2 = st.tabs(["OpenSeaDragon deepzoom viewer","Create deepzoom image (.dzi)"])
  with tab1:   
   # Handle first image
   #url = "https://raw.githubusercontent.com/webdevserv/images_video/main/cowportrait.jpg" 
      
-  st.subheader("Deepzoom viewer")
-  img_description = st.text('View deep zoom images.')
+  st.subheader("OpenSeadDragon deepzoom viewer")
+  img_description = st.text('Instructions: Move around the slide by dragging, and use the mouse wheel to zoom.')
   view_dzi()
+  #eskuz; change dzi content to "Format":"jpg","Overlap":"2",TileSize":"256","Size":{"Height": "9221","Width":"7026"}
   st.caption("Copyright (c) 2008-2009, OpenZoom <http://openzoom.org/>")
   st.caption("Copyright (c) 2008-2009, Daniel Gasienica <daniel@gasienica.ch>")
-  st.caption("Copyright (c) 2008,      Kapil Thangavelu <kapil.foss@gmail.com>")
+  st.caption("Copyright (c) 2008, Kapil Thangavelu <kapil.foss@gmail.com>")
   
  with tab2:
   st.subheader("Deepzoom image creator")
