@@ -13,7 +13,7 @@ st.set_page_config(
    page_icon="images/icon.png",layout="wide",initial_sidebar_state="expanded"
 )
 #import os
-color=(0,0,255)
+#color=(0,0,255)
 st.image("images/banner.jpg")
 
 def fill_square_image(img):
