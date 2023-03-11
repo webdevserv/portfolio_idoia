@@ -3,6 +3,7 @@ import streamlit as st
 import os
 import deepzoom
 import streamlit.components.v1 as components
+#view https://github.com/openzoom/deepzoom.py/blob/master/examples/helloworld/helloworld-dzc.py to create a deepzoomcollection
 
 st.set_page_config(
    page_title="Streamlit iCodeIdoia",
@@ -43,7 +44,6 @@ def view_cow():
         tileSources: "https://raw.githubusercontent.com/webdevserv/images_video/main/old/cowportrait.dzi"                
     });
    </script> 
-   <div id="openseadragon1" style="width: 800px; height: 600px;"></div>
    """,
    height=600,
    )
@@ -118,7 +118,6 @@ def view_dzi():
   
    var viewer = OpenSeadragon({
    id: 'main-viewer',
-   //id: "openseadragon1",
    prefixUrl: '//openseadragon.github.io/openseadragon/images/',
    tileSources: cowportrait,
    showNavigator: true
@@ -160,7 +159,7 @@ def view_dzi():
 # Streamlit execution starts in main() function.
 def main():      
 # ---- TABS ----
- tab1, tab2, tab3 = st.tabs(["OpenSeaDragon deepzoom viewer","Create deepzoom image (.dzi)","OpenSeaDragon deepzoom viewer: Cow"])
+ tab1, tab2, tab3 = st.tabs(["OpenSeaDragon deepzoom viewer","Create deepzoom image (.dzi)","OpenSeaDragon deepzoom viewer: Ladies"])
  with tab1:   
   # Handle first image
   #url = "https://raw.githubusercontent.com/webdevserv/images_video/main/cowportrait.jpg" 
@@ -189,12 +188,9 @@ def main():
   img_description = st.text('Instructions: Move around the slide by dragging, and use the mouse wheel to zoom.')
   view_ladies()
   #eskuz; change dzi content to "Format":"jpg","Overlap":"2",TileSize":"256","Size":{"Height": "9221","Width":"7026"}
-  st.caption("Special thanks for openseadragon viewer; https://github.com/openseadragon")
-  st.caption("Image, 1930 Cannery, Ontario.")
+  st.caption("Special thanks for openseadragon viewer; https://openseadragon.github.io/")
+  st.caption("Image, Deseronto Archives. 1930 Cannery, Ontario, Canada.")
   
-  
-  
-
 
 if __name__ == "__main__":
    main()

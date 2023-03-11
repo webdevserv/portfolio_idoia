@@ -1,8 +1,9 @@
 import streamlit as st
 #from streamlit_lottie import st_lottie
 from PIL import Image
-import base64
+#import base64
 import time
+import streamlit.components.v1 as components
 
 def local_css(file_name):
     with open(file_name) as f:
@@ -37,9 +38,8 @@ with tab1:
    st.subheader("Projects")
    col1, col2 =  st.columns([1,1], gap="small")
 with col1:
-  #st.image(img_flat)
   youtube_html = """<iframe width="420" height="315" src="https://www.youtube.com/embed/0TCMxuZguY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-clipboard-write; encrypted-media; gyroscope; picture-in-picture;web-share" allowfullscreen></iframe>"""
+encrypted-media; gyroscope; picture-in-picture;web-share" allowfullscreen></iframe>"""
   st.markdown(youtube_html, unsafe_allow_html=True)
   #st.write("By (www.idoia.com)")
   st.caption("youtube @WifiNow")

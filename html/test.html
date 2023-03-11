@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script>
-
 // Proof of concept by Illya Moskvin
 // v1 - 2016 - IMA Lab, Indianapolis Museum of Art
 // v2 - 2021 - Experience Design, Art Institute of Chicago
 
-// MIT License, free (gratis and libre) for any use, we take no responsibility, etc.
+// MIT License
 // This example was updated in 2021 to not require jQuery.
 
-// You can see this slider in use on the AIC website:
-// https://www.artic.edu/articles/921/caring-for-two-woodcuts-by-martin-puryear
-
-// Originally inspired by the following:
+// Originally inspired by 
 // https://codyhouse.co/gem/css-jquery-image-comparison-slider/
 
 const viewerElement = document.getElementById('container');
-const handleElement = viewerElement.querySelector('.m-image-slider__handle');
+const handleElement = viewerElement.querySelector('.m_image_slider__handle');
 
 const imageData = {
     "leftImage": "https://raw.githubusercontent.com/webdevserv/images_video/main/8782194661678368612_left.json",
@@ -241,14 +238,14 @@ html, body {
   padding: 0;
 }
 
-.m-image-slider__viewer {
+.m_image_slider__viewer {
   height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.m-image-slider__handle {
+.m_image_slider__handle {
   position: absolute;
 
   /* center the element */
@@ -256,8 +253,8 @@ html, body {
   top: 50%;
 }
 
-/* overflow is hidden by .m-image-slider__viewer */
-.m-image-slider__handle__divider {
+/* overflow is hidden by .m_image_slider__viewer */
+.m_image_slider__handle__divider {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -268,7 +265,7 @@ html, body {
   z-index: 2;
 }
 
-.m-image-slider__handle__circle {
+.m_image_slider__handle__circle {
   position: absolute;
 
   height: 45px;
@@ -290,7 +287,7 @@ html, body {
   z-index: 3;
 }
 
-.m-image-slider__handle svg {
+.m_image_slider__handle svg {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -304,11 +301,10 @@ html, body {
 
 </head>    
 <body>
-<!-- slider from https://codepen.io/imoskvin/pen/yOXqvO-->
-<div id="container" class="m-image-slider__viewer">
-    <div class="m-image-slider__handle">
-      <div class="m-image-slider__handle__divider"></div>
-      <div class="m-image-slider__handle__circle">
+<div id="container" class="m_image_slider__viewer">
+    <div class="m_image_slider__handle">
+      <div class="m_image-slider__handle__divider"></div>
+      <div class="m_image-slider__handle__circle">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#FFF" d="M13 21l-5-5 5-5m6 0l5 5-5 5"/></svg>
       </div>
     </div>
