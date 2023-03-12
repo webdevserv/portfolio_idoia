@@ -37,6 +37,8 @@ cd C:\Users\idoia\OneDrive\CAREER\github\portfolio_idoia
 """records an environment's current package list into requirements.txt.
 pip freeze > requirements.txt
 
+conda activate --all
+
 
 """ make sure streamlit is uptodate """
 pip install streamlit --upgrade
