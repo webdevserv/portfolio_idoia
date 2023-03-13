@@ -7,8 +7,7 @@ from PIL import Image
 import numpy as np
 import tensorflow as tf
 import tensorflow_hub as hub
-#import matplotlib.pyplot as plt
-#import matplotlib
+import matplotlib.pyplot as plt
 os.environ["TFHUB_DOWNLOAD_PROGRESS"] = "True"
 
 import streamlit as st
@@ -19,8 +18,8 @@ import urllib.request
 
 # Declaring Constants
 #IMAGE_PATH = "C:/Users/idoia/Downloads/1.jpg"
-
-SAVED_MODEL_PATH = "https://tfhub.dev/captain-pool/esrgan-tf2/1"
+#
+SAVED_MODEL_PATH = "https://github.com/captain-pool/GSOC/releases/download/1.0.0/esrgan.tar.gz"
 
 st.set_page_config(
    page_title="Streamlit iCodeIdoia",
@@ -63,62 +62,88 @@ def save_image(image, filename):
   #image.save("%s.jpg" % filename)
   #print("Saved as %s.jpg" % filename)
 
-#%matplotlib inline
-def plot_image(image, title=""):
+
+def plot_image(image0, title=""):
   """
     Plots images from image tensors.
     Args:
       image: 3D image tensor. [height, width, channels].
       title: Title to display in the plot.
   """
-  image = np.asarray(image)
-  image = tf.clip_by_value(image, 0, 255)
-  image = Image.fromarray(tf.cast(image, tf.uint8).numpy())
-
+  image1 = np.asarray(image0)
+  image2 = tf.clip_by_value(image1, 0, 255)
+  image3 = Image.fromarray(tf.cast(image2, tf.uint8).numpy())
+  #print(title)
+  #print("plot")
   #plt.imshow(image)
-  #plt.axis("off")
+  #plt.axis("on")
   #plt.title(title)
-  #image.show()
 
-  return image
+  return image3
+
+def downscale_image(image):
+  """
+      Scales down images using bicubic downsampling.
+      Args:
+          image: 3D or 4D tensor of preprocessed image
+  """
+  image_size = []
+  if len(image.shape) == 3:
+    image_size = [image.shape[1], image.shape[0]]
+  else:
+    raise ValueError("Dimension mismatch. Can work only on single image.")
+
+  image = tf.squeeze(
+      tf.cast(
+          tf.clip_by_value(image, 0, 255), tf.uint8))
+
+  lr_image = np.asarray(
+    Image.fromarray(image.numpy())
+    .resize([image_size[0] // 4, image_size[1] // 4],
+              Image.BICUBIC))
+
+  lr_image = tf.expand_dims(lr_image, 0)
+  lr_image = tf.cast(lr_image, tf.float32)
+  return lr_image
 
 #Performing Super Resolution of images loaded from path
 #enhance super resolution gan the image
 def esrgan_image(imagename, filenamepath):
  hr_image = preprocess_image(filenamepath)
- # Plotting Original Resolution image 
- #plot_image(tf.squeeze(hr_image), title="Original Image")
+ title1="Original Image"
+ plot_image1 = plot_image(tf.squeeze(hr_image),title="Original")
  #save_image(tf.squeeze(hr_image), filename="Original Image")
+ #st.image(plot_image1)
 
- #loads the model
- model = hub.load(SAVED_MODEL_PATH)
-
+ #model = hub.load("https://tfhub.dev/captain-pool/esrgan-tf2/1")
+ model = hub.load("https://github.com/captain-pool/GSOC/releases/download/1.0.0/esrgan.tar.gz")
  start = time.time()
  fake_image = model(hr_image)
  fake_image = tf.squeeze(fake_image)
- print("Time Taken: %f" % (time.time() - start))
+ st.text("Time Taken: %f" % (time.time() - start))
+
+ # Calculating PSNR wrt Original Image
+ # must have 3 channels
+ if hr_image.shape[-1] == 4:
+  hr_image = hr_image[...,:-1]
+
+ return_image = fake_image
+ fake_image = downscale_image(tf.squeeze(fake_image))
+
+ psnr = tf.image.psnr(tf.clip_by_value(fake_image, 0, 255),tf.clip_by_value(hr_image, 0, 255), max_val=255)
+ st.text("PSNR Achieved: %f" % psnr)
 
  # Plotting Super Resolution Image
- plot_image1 = plot_image(tf.squeeze(fake_image), title="Super Resolution")
- #removed saving functionality
- #get first part of filename
- #improved_filename = imagename.rsplit('.', 1)
- #not saving
- #save_image(tf.squeeze(fake_image), filename = improved_filename[0]+ "SuperResolutionFile")
- display_time(time.time() - start)
- #time_message2 = "Time taken: %f" % (time.time() - start)
- return plot_image1
+ plot_image2 = plot_image(tf.squeeze(fake_image),"Super Resolution")
+ #save_image(tf.squeeze(fake_image), filename="Super Resolution")
+ #st.image(plot_image2)
 
-def display_time(timeinfo):
-   time_info = "Time taken: %f" % (timeinfo)
-   st.write(time_info)
+ return return_image
 
 def main():     
     #ILP
     # Render the readme as markdown using st.markdown.
     #readme_text = st.markdown(get_file_content_as_string("instructions.md"))
-
-    # Once we have the dependencies, add a selector for the app mode on the sidebar.
     st.sidebar.title("Please select an option")
     app_mode = st.sidebar.selectbox("Choose the app mode",
                                     ["Process Single JPG Image"])
@@ -139,18 +164,13 @@ def main():
                 #filename = uploaded_file.name
                 #hardcoded upload folder
                 filepath = "C:/Users/idoia/OneDrive/CAREER/github/portfolio_idoia/samples/"
-                #print("filepath " + filepath)
                 #print("filename " + filename)
                 imagepath = filepath + uploaded_file.name
                 generated_img = esrgan_image(uploaded_file.name, imagepath)
-                st.text("Enhanced Super Resolution GAN image created.")
-                #st.text("ESRGAN image saved sucessfully, as *SuperResolutionFile.jpg.")              
+                st.text("Enhanced Super Resolution GAN image created.")   
                 
                 st.image(generated_img)  
-                #if (generated_img):
-                  #st.text("Time is "+ time_info)
-
-                                   
+                
 # Download a single file and make its content available as a string.
 #@st.cache_data(show_spinner=False)
 #def get_file_content_as_string(path):
