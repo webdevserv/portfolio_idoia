@@ -38,8 +38,7 @@ with tab1:
    st.subheader("Projects")
    col1, col2 =  st.columns([1,1], gap="small")
 with col1:
-  youtube_html = """<iframe width="420" height="315" src="https://www.youtube.com/embed/0TCMxuZguY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-encrypted-media; gyroscope; picture-in-picture;web-share" allowfullscreen></iframe>"""
+  youtube_html = """<iframe width="420" height="315" src="https://www.youtube.com/embed/0TCMxuZguY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"""
   st.markdown(youtube_html, unsafe_allow_html=True)
   #st.write("By (www.idoia.com)")
   st.caption("youtube @WifiNow")
