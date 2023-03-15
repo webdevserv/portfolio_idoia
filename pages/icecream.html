@@ -1,18 +1,58 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../style/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Bubbler+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
 <style>
-    .104_156 { 
-	overflow:hidden;
+/* ILP Turn off parallax scrolling for tablets and phones */
+/* @media only screen and (max-device-width: 1600px) {
+  body {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+} */
+
+
+@media (max-width:750px){
+    body{background-color: red;}.w3-modal-content{width:500px}}   
+
+/*navegation*/
+.w3-menubar-item {
+	color:rgba(0, 0, 0, 1);
+    top:10px;
+    font-family:Hind;
+    text-align:left;
+    font-size:25px;
+    letter-spacing:0;
+	left:0px;
+    top:0px;
 }
-.e104_156 { 
-	width:1460px;
-	height:1044px;
-	position:absolute;
+a {
+    text-decoration: none;
+    color:black;
 }
+body, html {
+    /*background-image:url(images/background.png);*/
+    background-repeat:no-repeat;
+    background-size:cover; 
+    /*background-color: #83bd86; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+} 
+
+.w3-content .w3-container{ 
+	left:10px;
+	top:10px;	
+}
+
 .e103_101 { 
 	width:1460px;
 	height:1044px;
@@ -20,74 +60,8 @@
 	left:0px;
 	top:0px;
 }
-.e103_99 { 
-	width:1440px;
-	height:1024px;
-	position:absolute;
-	left:10px;
-	top:10px;
-	background-image:url(images/background.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.nav { 
-	width:504px;
-	height:38px;
-	position:absolute;
-	left:718px;
-	top:47px;
-}
-.e103_87 { 
-	width:504px;
-	height:38px;
-	position:absolute;
-	left:0px;
-	top:0px;
-}
-.e102_66 { 
-	color:rgba(0, 0, 0, 1);
-	width:65px;
-	height:38px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	font-family:Hind;
-	text-align:left;
-	font-size:24px;
-	letter-spacing:0;
-}
-.e102_69 { 
-	color:rgba(0, 0, 0, 1);
-	width:97px;
-	height:38px;
-	position:absolute;
-	left:175px;
-	top:0px;
-	font-family:Hind;
-	text-align:left;
-	font-size:24px;
-	letter-spacing:0;
-}
-.e102_70 { 
-	color:rgba(0, 0, 0, 1);
-	width:122px;
-	height:38px;
-	position:absolute;
-	left:382px;
-	top:0px;
-	font-family:Hind;
-	text-align:left;
-	font-size:24px;
-	letter-spacing:0;
-}
-.e103_82 { 
-	width:538px;
-	height:909px;
-	position:absolute;
-	left:32px;
-	top:39px;
-}
-.e102_63 { 
+
+.company { 
 	color:rgba(0, 0, 0, 1);
 	width:419px;
 	height:81px;
@@ -99,7 +73,7 @@
 	font-size:64px;
 	letter-spacing:0;
 }
-.e102_64 { 
+.motto { 
 	color:rgba(255, 255, 255, 1);
 	width:311px;
 	height:84px;
@@ -173,9 +147,7 @@
 	border-bottom-left-radius:21px;
 	border-bottom-right-radius:21px;
 }
-.103_85 { 
-	border:3px solid rgba(255, 255, 255, 1);
-}
+
 .e102_78 { 
 	width:170px;
 	height:56px;
@@ -226,24 +198,62 @@
 	font-size:24px;
 	letter-spacing:0;
 }
-a {
-    text-decoration: none;
-    color:black;
+.e103_87 { 
+	position:relative;
+	background-color: blue;
 }
-body {background-color: 83bd86;;}
 
+.main_body { 
+	width:538px;
+	height:909px;
+	position:absolute;
+	left:32px;
+	top:39px;
+}
+</style>
+<style>
+	.w3-hover-opacity {cursor: pointer;}
 </style>
 </head>
 <body>
-    <div class=e104_156>
-        <div class=e103_101>
-          <div class="e103_99"></div>
-        </div>
-        <div class="nav">
-          <div class=e103_87><span  class="e102_66"><a href="">home</a></span><span  class="e102_69"><a href="">flavors</a></span><span  class="e102_70"><a href="">locations</a></span></div>
-        </div>
-        <div class=e103_82><span  class="e102_63">buzzcream</span><span  class="e102_64">FAVE TASTE</span><span  class="e102_67">Buzz your tastebuds</span><span  class="e102_68">not the calories</span>
-          <div class=e102_76><span  class="e102_75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
+    <div class="w3-content w3-container">
+		<div class="w3-top">
+			<div class="w3-bar" id="myNavbar">
+				<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-left" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+			<div class="w3-menubar">				
+				<a class="w3-menubar-item w3-button w3-hide-small" href="#">HOME</a>
+				<a class="w3-menubar-item w3-button w3-hide-small" href="#">FLAVORS</a>
+				<a class="w3-menubar-item w3-button w3-hide-small"href="#">LOCATIONS</a>
+			</div>
+			 <!-- original has hyperlinks outside not spans with hyperlinks-->
+				
+				
+				<!-- <div class="w3-bar" id="myNavbar">
+				<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+				<i class="fa fa-bars"></i>
+				</a>
+				<a href="#home" class="w3-bar-item w3-button">HOME</a>
+				<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+				<a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+				<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+				<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+				<i class="fa fa-search"></i>
+				</a>
+			  </div> -->
+			</div>
+			<!-- ILP paste here tab and cell nav -->			
+			<!-- Navbar on small screens -->
+			<div id="navSmall" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-left">
+				<a href="#flavors" class="w3-bar-item w3-button" onclick="toggleFunction()">FLAVORS</a>
+				<a href="#locations" class="w3-bar-item w3-button" onclick="toggleFunction()">LOCATIONS</a>
+				<a href="#" class="w3-bar-item w3-button">SEARCH</a>
+			</div> 
+		</div>
+        <div class="main_body"><span  class="company">buzzcream</span><span  class="motto">FAVE TASTE</span><span  class="e102_67">Buzz your tastebuds</span><span  class="e102_68">not the calories</span>
+         <div class=e102_76><span  class="e102_75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
           <div class=e103_86>
             <div class=e103_85>
               <div class=e102_78><a href=""><span  class="e102_73">book tasting</span></a></div>
@@ -254,5 +264,18 @@ body {background-color: 83bd86;;}
           </div>
         </div>
       </div>
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navSmall");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
 </body>
 </html>

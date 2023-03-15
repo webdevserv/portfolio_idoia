@@ -70,7 +70,7 @@ with col2:
   Digital Marketing agencies London: Worked as a freelance web developer for several clients such as Diageo, Banking clients and Rio Tinto. Used CSS, HTML, graphics, JavaScript and C# Visual Studio to create and improve web sites/apps.
   iXL: Created custom websites for blue chip clients such as British Airways, Cisco, Dupont, Thistle Hotels, Virgin and UBS. Miller Freeman: Developed a custom project with Pivotal CRM and Formida Floorplanning.
   """) 
-   st.write("[Word Press Site >](https://dev-webdevserv.pantheonsite.io/")
+   st.write("[WP website >](https://live-webdevserv.pantheonsite.io")
 
 with tab3:
    st.subheader("Bio snap")
