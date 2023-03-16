@@ -16,7 +16,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
     letter-spacing:0;
 }
 .w3-center .w3-menubar{display:inline-block;width:auto}
-.w3-menubar .w3-menubar-item{padding:10px 60px 10px 0px;float:left;width:auto;border:none;display:block;outline:0;}
+.w3-menubar .w3-menubar-item{padding:10px auto 10px auto;float:left;width:auto;border:none;display:block;outline:0;}
 .w3-menubar .w3-dropdown-hover,.w3-bar .w3-dropdown-click{position:static;float:left}
 .w3-menubar .w3-button{white-space:normal}
 .w3-menubar-block .w3-menubar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
@@ -88,7 +88,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
 .w3-bar{width:100%;overflow:hidden}.w3-center .w3-bar{display:inline-block;width:auto}
 /*ilp */
-.w3-bar .w3-bar-item{padding:8px 25px 8px 0px;float:right;width:auto;border:none;display:block;outline:0;}
+.w3-bar .w3-bar-item{padding:8px 8px 8px 8px;float:right;width:auto;border:none;display:block;outline:0;}
 /*ilp */
 .w3-bar .w3-dropdown-hover,.w3-bar .w3-dropdown-click{position:static;float:left}
 .w3-bar .w3-button{white-space:normal}
@@ -138,7 +138,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-circle{border-radius:50%}
 .w3-round-small{border-radius:2px}.w3-round,.w3-round-medium{border-radius:4px}.w3-round-large{border-radius:8px}.w3-round-xlarge{border-radius:16px}.w3-round-xxlarge{border-radius:32px}
 .w3-row-padding,.w3-row-padding>.w3-half,.w3-row-padding>.w3-third,.w3-row-padding>.w3-twothird,.w3-row-padding>.w3-threequarter,.w3-row-padding>.w3-quarter,.w3-row-padding>.w3-col{padding:0 8px}
-.w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
+/*ilp .w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px} */
+.w3-container,.w3-panel{padding:0.01em 0px}.w3-panel{margin-top:16px;margin-bottom:16px}
 .w3-code,.w3-codespan{font-family:Consolas,"courier new";font-size:16px}
 .w3-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
 .w3-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
