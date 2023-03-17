@@ -17,44 +17,64 @@
     min-height: 400px;
   }
 } */
+/* small screen */
 @media only screen and (max-width: 540px) {
 	body, html {
     background-image:url(images/bgsmall.png);
+	background-clip: content-box;
     background-repeat:no-repeat;
-    background-color: #83bd86; 
-    /* background-position: center; */
-	/* background-attachment: fixed; */
-    background-repeat: no-repeat;
-    min-height: 100%;
-} 
-.w3-container, .w3-panel {
-    padding: 0em 0px;
+    /* background-color: #83bd86;  */
+	background-color: pink;
+	min-height: 100%;
+    background-position: center;
+	/* background-attachment: fixed;  */
+    min-height: 100%; 
+	} 
+	.w3-container, .w3-panel {padding: 0em 0px;}
+	.header {font-size:40px;margin-top:0px!important;padding-top:400px!important;margin-left: 20px!important;margin-right:20px!important;}
+	.sub_header {font-size:26px;margin-left: 20px!important;margin-right:20px!important;}
+	.main_body{margin-left:0px!important;margin-top: 0px!important;}
+	.latin{font-size:16px;}
+	.button_text{font-size:14px;}
+	.latin_div{padding:10px!important;background-color: aqua!important;align-self: auto!important;width: 100%!important;text-align: left;}
+	.main_body{margin-left: 20px!important;margin-right:20px!important;}	
+	.cell_body{margin-left:0px;margin-right:0px;padding:0px;}
+	
 }
-}
-
+/* medium screen */
 @media only screen and (min-width:541px) and (max-width:912px) {
     body, html {
     background-image:url(images/bgmed.png);
     background-repeat:no-repeat;
     background-color: #83bd86; 
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-height: 100%;
-} 
+    /* background-attachment: fixed; */
+    min-height: 100%;} 
+    .header {font-size:64px;}
+	.sub_header {font-size:40px;}
+	.latin{font-size:20px;}
+	.latin_div{width:55%!important;}
+	.button_text{font-size:18px;}
+	.w3-content {
+		margin-left: 20px!important;
+		margin-right: 20px!important;
+	}
 }
-
-@media only screen and  (min-width: 913px) {
+/* large screen */
+@media only screen and  (min-width: 913px)  {
 	body, html {
 	background-image:url(images/background.png);
     background-repeat:no-repeat;
     background-color: #83bd86; 
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
-    min-height: 100%;
-} 
+    /* min-height: 100%; */
+    } 
+	.header {font-size:80px;}
+	.sub_header {font-size:64px;}
+	.latin{font-size:24px;}
+	.button_text{font-size:18px;}	
+	.latin_div{margin-top:120px!important;width:55%!important;}
 }
-
-.body { background-color:red; }
 
 /*navegation*/
 .w3-menubar-item {
@@ -69,29 +89,36 @@
 }
 a {
     text-decoration: none;
-    color:black;
+    color:rgba(0, 0, 0, 1);
 }
+.main_body { 
+	margin-left:32px;
+	margin-top:39px;
+	/* width:538px;
+	height:909px;
+	position:absolute;
+	left:32px;
+	top:39px; */
 
+
+    /* align-items: center; */
+	
+	
+	/* padding-top:39px;
+	padding-left:32px; */
+}
 .w3-content .w3-container{ 
+	width:100%;
 	left:10px;
 	top:10px;	
 }
-
-.e103_101 { 
-	width:1460px;
-	height:1044px;
-	position:absolute;
-	left:0px;
-	top:0px;
-}
-
 .company { 
 	color:rgba(0, 0, 0, 1);
-	width:419px;
+	/* width:419px;
 	height:81px;
-	position:absolute;
-	left:0px;
-	top:0px;
+	position:absolute; */
+	/* left:0px;
+	top:0px; */
 	font-family:Bubbler One;
 	text-align:left;
 	font-size:64px;
@@ -99,157 +126,144 @@ a {
 }
 .motto { 
 	color:rgba(255, 255, 255, 1);
-	width:311px;
+	/* width:311px;
 	height:84px;
-	position:absolute;
-	left:0px;
-	top:103px;
+	position:absolute; */
+	/* left:0px;
+	top:103px; */
 	font-family:Poppins;
 	text-align:left;
 	font-size:32px;
 	letter-spacing:0;
 }
-.e102_67 { 
+.header{ 
 	color:rgba(217.8125050663948, 84.40234780311584, 111.53659299015999, 1);
-	width:497px;
-	height:246px;
-	position:absolute;
+	/* width:497px;
+	height:246px; */
+	/* position:absolute;
 	left:0px;
-	top:209px;
+	top:209px; */
 	font-family:Leckerli One;
 	text-align:left;
-	font-size:80px;
+	/* font-size:80px; */
 	letter-spacing:0;
 }
-.e102_68 { 
+.sub_header{ 
 	color:rgba(17.00000088661909, 41.00000135600567, 4.000000236555934, 1);
-	width:538px;
-	height:70px;
-	position:absolute;
+	/* width:538px;
+	height:70px; */
+	/* position:absolute;
 	left:0px;
-	top:477px;
+	top:477px; */
 	font-family:Leckerli One;
 	text-align:left;
-	font-size:64px;
+	/* font-size:64px; */
 	letter-spacing:0;
+	margin-top:10px;
 }
-.e102_76 { 
-	width:502px;
+.latin_div { 
+	/* width:502px;
 	height:248px;
 	position:absolute;
 	left:0px;
-	top:569px;
+	top:569px; */
+	/* margin-right:12px; */
+	/* margin-top:50px;	 */
+	width:80%;
+	background-color: red;
+	display: flex;
+    flex-wrap: wrap;
 }
-.e102_75 { 
+.latin { 
 	color:rgba(0, 0, 0, 1);
-	width:482px;
-	height:228px;
-	position:absolute;
+	/* width:482px;
+	height:228px; */
+	/* position:absolute;
 	left:10px;
-	top:10px;
+	top:10px; */
 	font-family:Hind;
 	text-align:left;
-	font-size:24px;
+	/* font-size:24px; */
 	letter-spacing:0;
 }
-.e103_86 { 
-	width:445px;
-	height:70px;
-	position:absolute;
+.buttons_div { 
+	padding:20px 0px 20px 0px;
+	/* width: 212px;	
+	padding:20px; */
+	/* max-width: 212px;
+	min-height:auto; */
+	/* width:100%; */
+	/* max-height:70px;
+	min-height: auto; */
+	/* position:absolute;
 	left:0px;
-	top:839px;
+	top:839px; */
 }
-.e103_85 { 
-	background-color:rgba(243.00000071525574, 211.00000262260437, 56.000000461936, 1);
-	width:212px;
+.cell_buttons_div { 
+	margin:0px;
+	padding:20px 0px 20px 0px;
+	background-color: black;	
+	/* width: 212px;	
+	padding:20px; */
+	/* max-width: 212px;
+	min-height:auto; */
+	/* width:100%; */
+	/* max-height:70px;
+	min-height: auto; */
+	/* position:absolute;
+	left:0px;
+	top:839px; */
+}
+.left_button { 
+	background-color:rgba(243.00000071525574, 211.00000262260437, 56.000000461936, 1);	
+}
+.right_button { 
+	background-color:rgba(255, 255, 255, 1);	
+}
+.button_adj {
+	height:70px!important;
+	padding:15px;
+	/* width:212px;
 	height:70px;
 	position:absolute;
 	left:0px;
-	top:0px;
+	top:0px; */
+	text-align: center;
 	border-top-left-radius:21px;
 	border-top-right-radius:21px;
 	border-bottom-left-radius:21px;
 	border-bottom-right-radius:21px;
 }
-
-.e102_78 { 
-	width:170px;
-	height:56px;
-	position:absolute;
-	left:21px;
-	top:7px;
-}
-.e102_73 { 
+.button_text { 
 	color:rgba(17.00000088661909, 41.00000135600567, 4.000000236555934, 1);
-	width:150px;
+	/* height:36px; */
+	/* width:131px;
 	height:36px;
 	position:absolute;
 	left:10px;
-	top:10px;
+	top:10px; */
 	font-family:Poppins;
-	text-align:left;
-	font-size:24px;
+	text-align:center;
+	/* font-size:24px; */
 	letter-spacing:0;
-}
-.e103_84 { 
-	background-color:rgba(255, 255, 255, 1);
-	width:209px;
-	height:70px;
-	position:absolute;
-	left:236px;
-	top:0px;
-	border-top-left-radius:21px;
-	border-top-right-radius:21px;
-	border-bottom-left-radius:21px;
-	border-bottom-right-radius:21px;
-}
-.e102_77 { 
-	width:151px;
-	height:56px;
-	position:absolute;
-	left:29px;
-	top:7px;
-}
-.e102_74 { 
-	color:rgba(17.00000088661909, 41.00000135600567, 4.000000236555934, 1);
-	width:131px;
-	height:36px;
-	position:absolute;
-	left:10px;
-	top:10px;
-	font-family:Poppins;
-	text-align:left;
-	font-size:24px;
-	letter-spacing:0;
-}
-.e103_87 { 
-	position:relative;
-	background-color: blue;
-}
-
-.main_body { 
-	width:538px;
-	height:909px;
-	position:absolute;
-	left:32px;
-	top:39px;
 }
 </style>
 <style>
-	.w3-hover-opacity {cursor: pointer;}
-	.w3-button:hover {
-    /*color: #000!important;*/
-	cursor: pointer;
-    /* background-color: #ccc!important; */
-}
-	.w3-bar-block .w3-bar-item {
-     padding: 8px 4px 8px 4px;}
-	 .w3-display-topright {padding: 0px!important;}
+	 .w3-button { padding-inline:30px;}
+	/* .w3-button:hover {
+		color: #000!important;
+		cursor: pointer;
+		background-color: #fff!important; 
+    } */
+	.w3-bar-block .w3-bar-item {padding: 8px 4px 8px 4px;}
+	.w3-display-topright {padding: 0px!important;}
+	.w3-button:hover {color: #000;cursor:pointer;background-color: transparent!important;
+     /*background-color: #ccc!important;*/}
 </style>
 </head>
 <body>
     <div class="w3-content w3-container">
-		<!-- Navbar small screens -->
+		<!-- navbar small screens -->
 		<div class="w3-display-topright">
 			<div class="w3-bar" id="myNavbar"><!-- needs to have the w3-left so it is visible-->
 				<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
@@ -261,30 +275,32 @@ a {
 				<a href="#locations" class="w3-bar-item w3-button">LOCATIONS</a>
 				<a href="#" class="w3-bar-item w3-button">SEARCH</a>
 			</div> 
-		</div>
-		<!-- Navbar medium and large screens -->
+		</div><!-- // small screens -->
+		<!-- navbar medium & large screens -->
 		<div class="w3-top">						
 			<div class="w3-menubar">				
 				<a class="w3-menubar-item w3-button w3-hide-small" href="#">HOME</a>
 				<a class="w3-menubar-item w3-button w3-hide-small" href="#">FLAVORS</a>
-				<a class="w3-menubar-item w3-button w3-hide-small"href="#">LOCATIONS</a>
-			</div>			
-			</div>			
-		</div>
-        <div class="main_body"><span  class="company">buzzcream</span><span  class="motto">FAVE TASTE</span><span  class="e102_67">Buzz your tastebuds</span><span  class="e102_68">not the calories</span>
-         <div class=e102_76><span  class="e102_75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
-          <div class=e103_86>
-            <div class=e103_85>
-              <div class=e102_78><a href=""><span  class="e102_73">book tasting</span></a></div>
-            </div>
-            <div class=e103_84>
-              <div class=e102_77><a href=""><span  class="e102_74">buzz menu</span></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
+				<a class="w3-menubar-item w3-button w3-hide-small" href="#">LOCATIONS</a>
+			</div>						
+		</div><!-- // large-med screens -->
+        <div class="main_body">
+			<div class="company">buzzcream</div><div  class="motto">FAVE TASTE</div>
+			<div class="header w3-hide-small">Buzz your<br/>tastebuds</div><div class="sub_header w3-hide-small">not the calories</div>		
+			<div class="latin_div w3-hide-small"><span class="latin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
+			<div class="buttons_div w3-hide-small">
+				<span class="button_adj left_button"><a href="#"><span  class="button_text">book tasting</span></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="button_adj right_button"><a href="#"><span  class="button_text">buzz menu</span></a></span>
+			</div><!-- // buttons_div -->
+        </div><!-- // main_body -->		
+    </div><!--// w3-content -->
+	<div class="cell_body w3-hide-medium w3-hide-large">
+		<div class="header">Buzz your tastebuds</div><div class="sub_header">not the calories</div>		
+		<div class="cell_buttons_div">
+			<span class="button_adj left_button"><a href="#"><span  class="button_text">book tasting</span></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="button_adj right_button"><a href="#"><span  class="button_text">buzz menu</span></a></span>
+		</div><!-- // cell buttons div -->
+		<div class="latin_div"><span class="latin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
+	</div><!-- // cell body -->
 <script>
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navSmall");
@@ -295,6 +311,5 @@ function toggleFunction() {
     }
 }
 </script>
-
 </body>
 </html>
