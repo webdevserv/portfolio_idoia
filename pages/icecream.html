@@ -23,11 +23,9 @@
     background-image:url(images/bgsmall.png);
 	background-clip: content-box;
     background-repeat:no-repeat;
-    /* background-color: #83bd86;  */
-	background-color: pink;
-	min-height: 100%;
+    background-color: #83bd86; 
+	/*background-color: pink;*/
     background-position: center;
-	/* background-attachment: fixed;  */
     min-height: 100%; 
 	} 
 	.w3-container, .w3-panel {padding: 0em 0px;}
@@ -37,9 +35,7 @@
 	.latin{font-size:16px;}
 	.button_text{font-size:14px;}
 	.latin_div{padding:10px!important;background-color: aqua!important;align-self: auto!important;width: 100%!important;text-align: left;}
-	.main_body{margin-left: 20px!important;margin-right:20px!important;}	
-	.cell_body{margin-left:0px;margin-right:0px;padding:0px;}
-	
+	.main_body{margin-left: 20px!important;margin-right:20px!important;}		
 }
 /* medium screen */
 @media only screen and (min-width:541px) and (max-width:912px) {
@@ -100,8 +96,7 @@ a {
 	left:32px;
 	top:39px; */
 
-
-    /* align-items: center; */
+    /* align-items: center; ????????????????*/
 	
 	
 	/* padding-top:39px;
@@ -247,6 +242,7 @@ a {
 	/* font-size:24px; */
 	letter-spacing:0;
 }
+.cell_body{margin-left:0px;margin-right:0px;padding:0px;text-align: center;text-align:center;}	
 </style>
 <style>
 	 .w3-button { padding-inline:30px;}
@@ -257,7 +253,7 @@ a {
     } */
 	.w3-bar-block .w3-bar-item {padding: 8px 4px 8px 4px;}
 	.w3-display-topright {padding: 0px!important;}
-	.w3-button:hover {color: #000;cursor:pointer;background-color: transparent!important;
+	.w3-button:hover {color:rgba(217.8125050663948, 84.40234780311584, 111.53659299015999, 1);cursor:pointer;
      /*background-color: #ccc!important;*/}
 </style>
 </head>
@@ -294,12 +290,12 @@ a {
         </div><!-- // main_body -->		
     </div><!--// w3-content -->
 	<div class="cell_body w3-hide-medium w3-hide-large">
-		<div class="header">Buzz your tastebuds</div><div class="sub_header">not the calories</div>		
-		<div class="cell_buttons_div">
-			<span class="button_adj left_button"><a href="#"><span  class="button_text">book tasting</span></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="button_adj right_button"><a href="#"><span  class="button_text">buzz menu</span></a></span>
-		</div><!-- // cell buttons div -->
-		<div class="latin_div"><span class="latin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
-	</div><!-- // cell body -->
+			<div class="header">Buzz your tastebuds</div><div class="sub_header">not the calories</div>		
+			<div class="cell_buttons_div">
+				<span class="button_adj left_button"><a href="#"><span  class="button_text">book tasting</span></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="button_adj right_button"><a href="#"><span  class="button_text">buzz menu</span></a></span>
+			</div>
+			<div class="latin_div"><span class="latin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
+	</div>   
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
