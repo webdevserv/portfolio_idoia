@@ -28,14 +28,16 @@
 	} 
 	.w3-container, .w3-panel {padding: 0em 0px;}
 	.w3-button:hover {color:#000;cursor:pointer;}
-	.header {font-size:40px;;display: inline-flex;margin-left: 20px!important;margin-right: 20px!important;margin-top: 30px!important;}
-	.sub_header {font-size:26px;margin-left: 25px!important;margin-right: 20px!important;}
-	.main_body{margin-left:0px!important;margin-top: 0px!important;}
+	.header {font-size:35px;display: inline-flex;margin-left: 20px!important;margin-right:20px!important;}
+	.sub_header {font-size:26px;display: inline-flex;margin-left:20px!important;margin-right: 20px!important;}
+	.main_body{margin-left:20px!important;margin-top: 0px!important;}
 	.latin{font-size:16px;}
 	.button_text{font-size:14px;}
 	.latin_div{padding:10px!important;align-self: auto!important;width: 100%!important;text-align: left;}
 	.main_body{margin-left: 20px!important;margin-right:20px!important;}		
+	.company{font-size:54px!important;}
 }
+	
 /* medium screen */
 @media only screen and (min-width:541px) and (max-width:912px) {
     body, html {
@@ -44,6 +46,7 @@
     background-color: #83bd86; 
     /* background-attachment: fixed; */
     min-height: 100%;} 
+	.main_body{margin-left:32px!important;}
 	.w3-button:hover {color:#000;background-color:#e7ffb2!important;cursor:pointer;}
     .header {font-size:64px;}
 	.sub_header {font-size:40px;}
@@ -60,13 +63,13 @@
 	body, html {
 	background-image:url(images/bg1440_1024.png);
     background-repeat:no-repeat;
-    background-color: #83bd86; 
-    /* background-attachment: fixed; */
+    background-color: #83bd86;   
     background-repeat: no-repeat;
     /* min-height: 100%; */
     } 
 	.w3-button:hover {color:#000;background-color:#e7ffb2!important;cursor:pointer;}
-	.header {font-size:80px;}
+	.w3-menubar-item {font-size:22px!important;}
+	.header {font-size:80px;padding-top:10px;}
 	.sub_header {font-size:64px;}
 	.latin{font-size:24px;}
 	.button_text{font-size:18px;}	
@@ -90,19 +93,7 @@ a {
 }
 .main_body { 
 	margin-left:32px;
-	margin-bottom: 100px;
-	/* margin-top:39px; */
-	/* width:538px;
-	height:909px;
-	position:absolute;
-	left:32px;
-	top:39px; */
-
-    /* align-items: center; ????????????????*/
-	
-	
-	/* padding-top:39px;
-	padding-left:32px; */
+	margin-bottom: 100px;	
 }
 .w3-content .w3-container{ 
 	width:100%;
@@ -110,73 +101,39 @@ a {
 	top:10px;	
 }
 .company { 
-	color:rgba(0, 0, 0, 1);
-	/* width:419px;
-	height:81px;
-	position:absolute; */
-	/* left:0px;
-	top:0px; */
+	color:rgba(0, 0, 0, 1);	
 	font-family:Bubbler One;
 	text-align:left;
 	font-size:64px;
 	letter-spacing:0;
 }
 .motto { 
-	color:rgba(255, 255, 255, 1);
-	/* width:311px;
-	height:84px;
-	position:absolute; */
-	/* left:0px;
-	top:103px; */
+	color:rgba(255, 255, 255, 1);	
 	font-family:Poppins;
 	text-align:left;
 	font-size:32px;
 	letter-spacing:0;
 }
 .header{ 
-	color:rgba(217.8125050663948, 84.40234780311584, 111.53659299015999, 1);
-	/* width:497px;
-	height:246px; */
-	/* position:absolute;
-	left:0px;
-	top:209px; */
+	color:rgba(217.8125050663948, 84.40234780311584, 111.53659299015999, 1);	
 	font-family:Leckerli One;
 	text-align:left;
-	/* font-size:80px; */
 	letter-spacing:0;
 }
 .sub_header{ 
-	color:rgba(17.00000088661909, 41.00000135600567, 4.000000236555934, 1);
-	/* width:538px;
-	height:70px; */
-	/* position:absolute;
-	left:0px;
-	top:477px; */
+	color:rgba(17.00000088661909, 41.00000135600567, 4.000000236555934, 1);	
 	font-family:Leckerli One;
 	text-align:left;
-	/* font-size:64px; */
 	letter-spacing:0;
 	margin-top:10px;
 }
-.latin_div { 
-	/* width:502px;
-	height:248px;
-	position:absolute;
-	left:0px;
-	top:569px; */
-	/* margin-right:12px; */
-	/* margin-top:50px;	 */
+.latin_div { 	
 	width:80%;
 	display: flex;
     flex-wrap: wrap;
 }
 .latin { 
-	color:rgba(0, 0, 0, 1);
-	/* width:482px;
-	height:228px; */
-	/* position:absolute;
-	left:10px;
-	top:10px; */
+	color:rgba(0, 0, 0, 1);	
 	font-family:Hind;
 	text-align:left;
 	/* font-size:24px; */
@@ -259,7 +216,7 @@ a {
 	.w3-bar-block .w3-bar-item {padding: 8px 4px 8px 4px;}
 	.w3-display-topright {padding: 0px!important;}
 	
-     /*background-color: #ccc!important;*/}
+     /*background-color: #ccc!important;*/
 </style>
 </head>
 <body>
@@ -271,11 +228,11 @@ a {
 					<i class="fa fa-bars"></i>
 				</a>
 			</div>		
-			<div id="navSmall" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-left">
-				<a href="#flavors" class="w3-bar-item w3-button">FLAVORS</a>
+			<div id="navSmall" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+				<a href="#flavors" class="w3-bar-item w3-button" >FLAVORS</a>
 				<a href="#locations" class="w3-bar-item w3-button">LOCATIONS</a>
 				<a href="#" class="w3-bar-item w3-button">SEARCH</a>
-			</div> 
+			</div>   
 		</div><!-- // small screens -->
 		<!-- navbar medium & large screens -->
 		<div class="w3-top">						
@@ -295,6 +252,7 @@ a {
         </div><!-- // main_body -->		
     </div><!--// w3-content -->
 	<div class="cell_body w3-hide-medium w3-hide-large">
+		    <div style="margin-top:35px;">&nbsp;</div>
 			<div class="header">Buzz your tastebuds</div><div class="sub_header">not the calories</div>		
 			<div class="cell_buttons_div">
 				<span class="button_adj left_button"><a href="#"><span  class="button_text">book tasting</span></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="button_adj right_button"><a href="#"><span  class="button_text">buzz menu</span></a></span>
@@ -302,7 +260,7 @@ a {
 			<div class="latin_div"><span class="latin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
 	</div>   
 <script>
-// Used to toggle the menu on small screens when clicking on the menu button
+// Used to toggle the menu on small screens
 function toggleFunction() {
     var x = document.getElementById("navSmall");
     if (x.className.indexOf("w3-show") == -1) {

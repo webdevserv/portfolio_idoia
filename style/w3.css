@@ -88,6 +88,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
 .w3-bar{width:100%;overflow:hidden}.w3-center .w3-bar{display:inline-block;width:auto}
 /*ilp */
+/* .w3-bar .w3-bar-item{padding:8px 8px 8px 8px;float:right;width:auto;border:none;display:block;outline:0;} */
 .w3-bar .w3-bar-item{padding:8px 8px 8px 8px;float:right;width:auto;border:none;display:block;outline:0;}
 /*ilp */
 .w3-bar .w3-dropdown-hover,.w3-bar .w3-dropdown-click{position:static;float:left}
