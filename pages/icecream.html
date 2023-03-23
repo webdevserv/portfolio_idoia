@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="../style/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
@@ -10,42 +10,35 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
 <style>
-/* ILP Turn off parallax scrolling for tablets and phones */
-/* @media only screen and (max-device-width: 1600px) {
-  body {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-} */
 /* small screen */
-@media only screen and (max-width: 540px) {
-	body, html {
+@media only screen and (max-width:540px) {
+	body,html {
     background-image:url(images/bg359_438.png);
     background-repeat:no-repeat;
-    background-color: #83bd86;
-    background-position: center;
-    min-height: 100%; 
+    background-color:#83bd86;
+    background-position:center;
+    min-height:100%; 
 	} 
-	.w3-container, .w3-panel {padding: 0em 0px;}
+	.w3-container,.w3-panel {padding:0em 0px;}
 	.w3-button:hover {color:#000;cursor:pointer;}
-	.header {font-size:35px;display: inline-flex;margin-left: 20px!important;margin-right:20px!important;}
-	.sub_header {font-size:26px;display: inline-flex;margin-left:20px!important;margin-right: 20px!important;}
-	.main_body{margin-left:20px!important;margin-top: 0px!important;}
+	.header {font-size:35px;display:inline-flex;margin-left:20px!important;margin-right:20px!important;}
+	.sub_header {font-size:26px;display:inline-flex;margin-left:20px!important;margin-right:20px!important;}
+	.main_body{margin-left:20px!important;margin-top:0px!important;}
 	.latin{font-size:16px;}
 	.button_text{font-size:14px;}
-	.latin_div{padding:10px!important;align-self: auto!important;width: 100%!important;text-align: left;}
-	.main_body{margin-left: 20px!important;margin-right:20px!important;}		
+	.latin_div{padding:10px!important;align-self:auto!important;width:100%!important;text-align:left;}
+	.main_body{margin-left:20px!important;margin-right:20px!important;}		
 	.company{font-size:54px!important;}
 }
 	
 /* medium screen */
 @media only screen and (min-width:541px) and (max-width:912px) {
-    body, html {
+    body,html {
     background-image:url(images/bg800_660.png);
     background-repeat:no-repeat;
-    background-color: #83bd86; 
-    /* background-attachment: fixed; */
-    min-height: 100%;} 
+    background-color:#83bd86; 
+    /* background-attachment:fixed; */
+    min-height:100%;} 
 	.main_body{margin-left:32px!important;}
 	.w3-button:hover {color:#000;background-color:#e7ffb2!important;cursor:pointer;}
     .header {font-size:64px;}
@@ -54,18 +47,18 @@
 	.latin_div{width:55%!important;}
 	.button_text{font-size:18px;}
 	.w3-content {
-		margin-left: 20px!important;
-		margin-right: 20px!important;
+		margin-left:20px!important;
+		margin-right:20px!important;
 	}
 }
 /* large screen */
-@media only screen and  (min-width: 913px)  {
-	body, html {
+@media only screen and  (min-width:913px)  {
+	body,html {
 	background-image:url(images/bg1440_1024.png);
     background-repeat:no-repeat;
-    background-color: #83bd86;   
-    background-repeat: no-repeat;
-    /* min-height: 100%; */
+    background-color:#83bd86;   
+	background-position:center;
+    /* min-height:100%; */
     } 
 	.w3-button:hover {color:#000;background-color:#e7ffb2!important;cursor:pointer;}
 	.w3-menubar-item {font-size:22px!important;}
@@ -78,7 +71,7 @@
 
 /*navegation*/
 .w3-menubar-item {
-	color:rgba(0, 0, 0, 1);
+	color:rgba(0,0,0,1);
     top:10px;
     font-family:Hind;
     text-align:left;
@@ -88,12 +81,12 @@
     top:0px;
 }
 a {
-    text-decoration: none;
-    color:rgba(0, 0, 0, 1);
+    text-decoration:none;
+    color:rgba(0,0,0,1);
 }
 .main_body { 
 	margin-left:32px;
-	margin-bottom: 100px;	
+	margin-bottom:100px;	
 }
 .w3-content .w3-container{ 
 	width:100%;
@@ -101,27 +94,27 @@ a {
 	top:10px;	
 }
 .company { 
-	color:rgba(0, 0, 0, 1);	
+	color:rgba(0,0,0,1);	
 	font-family:Bubbler One;
 	text-align:left;
 	font-size:64px;
 	letter-spacing:0;
 }
 .motto { 
-	color:rgba(255, 255, 255, 1);	
+	color:rgba(255,255,255,1);	
 	font-family:Poppins;
 	text-align:left;
 	font-size:32px;
 	letter-spacing:0;
 }
 .header{ 
-	color:rgba(217.8125050663948, 84.40234780311584, 111.53659299015999, 1);	
+	color:rgba(217.8125050663948,84.40234780311584,111.53659299015999,1);	
 	font-family:Leckerli One;
 	text-align:left;
 	letter-spacing:0;
 }
 .sub_header{ 
-	color:rgba(17.00000088661909, 41.00000135600567, 4.000000236555934, 1);	
+	color:rgba(17.00000088661909,41.00000135600567,4.000000236555934,1);	
 	font-family:Leckerli One;
 	text-align:left;
 	letter-spacing:0;
@@ -129,101 +122,58 @@ a {
 }
 .latin_div { 	
 	width:80%;
-	display: flex;
-    flex-wrap: wrap;
+	display:flex;
+    flex-wrap:wrap;
 }
 .latin { 
-	color:rgba(0, 0, 0, 1);	
+	color:rgba(0,0,0,1);	
 	font-family:Hind;
 	text-align:left;
 	/* font-size:24px; */
 	letter-spacing:0;
 }
 .buttons_div { 
-	padding:20px 0px 20px 0px;
-	/* width: 212px;	
-	padding:20px; */
-	/* max-width: 212px;
-	min-height:auto; */
-	/* width:100%; */
-	/* max-height:70px;
-	min-height: auto; */
-	/* position:absolute;
-	left:0px;
-	top:839px; */
+	padding:30px 0px 20px 0px;
 }
 .cell_buttons_div { 
 	margin:0px;
 	padding:20px 0px 20px 0px;
-	background-color: black;	
-	/* width: 212px;	
-	padding:20px; */
-	/* max-width: 212px;
-	min-height:auto; */
-	/* width:100%; */
-	/* max-height:70px;
-	min-height: auto; */
-	/* position:absolute;
-	left:0px;
-	top:839px; */
+	background-color:black;	
 }
 .left_button { 
-	background-color:rgba(243.00000071525574, 211.00000262260437, 56.000000461936, 1);	
+	background-color:rgba(243.00000071525574,211.00000262260437,56.000000461936,1);	
 }
 .right_button { 
-	background-color:rgba(255, 255, 255, 1);	
+	background-color:rgba(255,255,255,1);	
 }
 .button_adj {
 	height:70px!important;
 	padding:15px;
-	/* width:212px;
-	height:70px;
-	position:absolute;
-	left:0px;
-	top:0px; */
-
 	border:3px solid;
 	border-color:#fff;
-	text-align: center;
+	text-align:center;
 	border-top-left-radius:21px;
 	border-top-right-radius:21px;
 	border-bottom-left-radius:21px;
 	border-bottom-right-radius:21px;
 }
 .button_text { 
-	color:rgba(17.00000088661909, 41.00000135600567, 4.000000236555934, 1);
-	/* height:36px; */
-	/* width:131px;
-	height:36px;
-	position:absolute;
-	left:10px;
-	top:10px; */
+	color:rgba(17.00000088661909,41.00000135600567,4.000000236555934,1);
 	font-family:Poppins;
 	text-align:center;
-	/* font-size:24px; */
 	letter-spacing:0;
 }
-.cell_body{margin-left:0px;margin-right:0px;/*padding:0px;*/margin-top: 0px!important;padding-top: 180px!important;text-align: center;text-align:center;}	
-</style>
-<style>
-	 .w3-button { padding-inline:20px;}
-	/* .w3-button:hover {
-		color: #000!important;
-		cursor: pointer;
-		background-color: #fff!important; 
-    } */
-	.w3-button a:hover {background-color: red;}
-	.w3-bar-block .w3-bar-item {padding: 8px 4px 8px 4px;}
-	.w3-display-topright {padding: 0px!important;}
-	
-     /*background-color: #ccc!important;*/
+.cell_body{margin-left:0px;margin-right:0px;margin-top:0px!important;padding-top:180px!important;text-align:center;text-align:center;}	
+.w3-button { padding-inline:20px;}	
+.w3-bar-block .w3-bar-item {padding:8px 4px 8px 4px;}
+.w3-display-topright {padding:0px!important;}
 </style>
 </head>
 <body>
     <div class="w3-content w3-container">
 		<!-- navbar small screens -->
 		<div class="w3-display-topright">
-			<div class="w3-bar" id="myNavbar"><!-- needs to have the w3-left so it is visible-->
+			<div class="w3-bar" id="myNavbar">
 				<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
 					<i class="fa fa-bars"></i>
 				</a>
@@ -245,7 +195,7 @@ a {
         <div class="main_body">
 			<div class="company">buzzcream</div><div  class="motto">FAVE TASTE</div>
 			<div class="header w3-hide-small">Buzz your<br/>tastebuds</div><div class="sub_header w3-hide-small">not the calories</div>		
-			<div class="latin_div w3-hide-small"><span class="latin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
+			<div class="latin_div w3-hide-small"><span class="latin">Lorem ipsum dolor sit amet,consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
 			<div class="buttons_div w3-hide-small">
 				<span class="button_adj left_button"><a href="#"><span  class="button_text">book tasting</span></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="button_adj right_button"><a href="#"><span  class="button_text">buzz menu</span></a></span>
 			</div><!-- // buttons_div -->
@@ -257,7 +207,7 @@ a {
 			<div class="cell_buttons_div">
 				<span class="button_adj left_button"><a href="#"><span  class="button_text">book tasting</span></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="button_adj right_button"><a href="#"><span  class="button_text">buzz menu</span></a></span>
 			</div>
-			<div class="latin_div"><span class="latin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
+			<div class="latin_div"><span class="latin">Lorem ipsum dolor sit amet,consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
 	</div>   
 <script>
 // Used to toggle the menu on small screens
@@ -266,7 +216,7 @@ function toggleFunction() {
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
     } else {
-        x.className = x.className.replace(" w3-show", "");
+        x.className = x.className.replace(" w3-show","");
     }
 }
 </script>
