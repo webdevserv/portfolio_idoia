@@ -1,3 +1,6 @@
+"""
+@author: idoia lerchundi
+"""
 import streamlit as st
 from PIL import Image
 
@@ -11,19 +14,17 @@ def local_css(file_name):
 st.image("images/banner2.jpg")       
 st.subheader("Get in touch")
 
-# ---- LOAD ASSETS ----
-local_css("style/style.css")
+# ---- LOAD ASSETS 
+local_css("styles/style.css")
 img_working = Image.open("images/idoia_working.gif")
 img_art = Image.open("images/add-black-headphones-302253249.png")
-
-#if (st.session_state) and len(st.session_state["my_input"]) > 0:
- #st.write("You have entered: ", st.session_state["my_input"])
 
 with st.container():            
     contact_form = """
     <form action="youremailaddress" method="POST">
         <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Your name" required>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="company" placeholder="Company" required>
         <input type="email" name="email" placeholder="Email" required>
         <textarea name="message" placeholder="Message" required></textarea>
         <button type="submit">Send</button>
