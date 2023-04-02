@@ -14,7 +14,7 @@ st.set_page_config(
 st.image("images/banner.jpg")
 
 # Specify your source image
-SOURCE = "https://raw.githubusercontent.com/webdevserv/images_video/main/ref/playa.png"
+SOURCE = "https://raw.githubusercontent.com/webdevserv/images_video/main/ref/imgsrc/playa.jpg"
 #SOURCE = "https://raw.githubusercontent.com/webdevserv/images_video/main/ref/imgsrc/societa.jpg"
 #creator of *.dzi Microsoft deep zoom image
 
@@ -23,11 +23,11 @@ def create_deepzoom_img(SOURCE):
     tile_size=254,
     tile_overlap=1,
     tile_format="jpg",
-    image_quality=0.8,
+    image_quality=0.9,
     resize_filter="bicubic"        
  )
 
- creator.create(SOURCE, "images/dzi/playa.dzi")
+ creator.create(SOURCE, "images/playa.dzi")
 
 def view_versalles():
   #move dzi and pyramid folder to central rep
@@ -75,6 +75,23 @@ def view_societa():
          id: "openseadragon1",
          prefixUrl: "//openseadragon.github.io/openseadragon/images/",
          tileSources: "https://raw.githubusercontent.com/webdevserv/images_video/main/ref/societa.dzi"                
+      });
+      </script> 
+      """,
+      height=600,
+   )
+
+def view_playa():
+   #move dzi and pyramid folder to central rep
+   components.html("""
+   <div id="openseadragon1" style="width: 800px; height: 600px;"></div>
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+      var viewer = OpenSeadragon({
+         id: "openseadragon1",
+         prefixUrl: "//openseadragon.github.io/openseadragon/images/",
+         tileSources: "https://raw.githubusercontent.com/webdevserv/images_video/main/ref/playa.dzi"                
       });
       </script> 
       """,
@@ -173,7 +190,7 @@ def view_dzi():
 # Streamlit execution starts in main() function.
 def main():      
 # ---- TABS ----
- tab1, tab2, tab3, tab4 = st.tabs(["Versalles viewer","Cannery viewer","Societa in Sorrento viewer", "Create deepzoom image (.dzi)"])
+ tab1, tab2, tab3, tab4, tab5 = st.tabs(["Versalles viewer","Cannery viewer","Societa in Sorrento viewer", "Create deepzoom image (.dzi)", "Vamos a la playa"])
  with tab1:   
   # Handle first image
   #url = "https://raw.githubusercontent.com/webdevserv/images_video/main/cowportrait.jpg" 
@@ -216,6 +233,13 @@ def main():
   st.write("Deepzoom *.dzi image created in images/dzi folder.")
   
  st.caption("Special thanks for deepzoom library; OpenZoom <http://openzoom.org/>, Daniel Gasienica <daniel@gasienica.ch>, Kapil Thangavelu <kapil.foss@gmail.com>")
- 
+
+ with tab5:
+  st.subheader("Vamos a la playa!")
+  img_description = st.text('Instructions: Move around the slide by dragging, and use the mouse wheel to zoom.')
+  view_playa()
+  #eskuz; change dzi content to "Format":"jpg","Overlap":"2",TileSize":"256","Size":{"Height": "9221","Width":"7026"}
+  st.caption("Special thanks for openseadragon viewer; @github.com/openseadragon")
+
 if __name__ == "__main__":
    main()
