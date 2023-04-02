@@ -14,9 +14,10 @@ st.set_page_config(
 st.image("images/banner.jpg")
 
 # Specify your source image
-SOURCE = "https://raw.githubusercontent.com/webdevserv/images_video/main/ref/imgsrc/societa.jpg"
-
+SOURCE = "https://raw.githubusercontent.com/webdevserv/images_video/main/ref/playa.png"
+#SOURCE = "https://raw.githubusercontent.com/webdevserv/images_video/main/ref/imgsrc/societa.jpg"
 #creator of *.dzi Microsoft deep zoom image
+
 def create_deepzoom_img(SOURCE): 
  creator = deepzoom.ImageCreator(
     tile_size=254,
@@ -26,7 +27,7 @@ def create_deepzoom_img(SOURCE):
     resize_filter="bicubic"        
  )
 
- creator.create(SOURCE, "images/dzi/societa.dzi")
+ creator.create(SOURCE, "images/dzi/playa.dzi")
 
 def view_versalles():
   #move dzi and pyramid folder to central rep
@@ -79,8 +80,6 @@ def view_societa():
       """,
       height=600,
    )
-
-
 
 #viewer of *.dzi deep zoom image
 def view_dzi():
@@ -208,6 +207,7 @@ def main():
   #img_description = st.text('xxxxx.')
   #uploaded_file = st.file_uploader("Upload an image convert into Microsoft deep zoom image *.dzi", type=['jpg','png']
   st.write("For internal use only.")
+  #see source file at beginning of file
   #Source file: https://raw.githubusercontent.com/yourrepository/main/yourimage.jpg")     
   #st.write("Output folder is images/dzi") 
 
