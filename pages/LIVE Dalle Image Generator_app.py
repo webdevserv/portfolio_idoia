@@ -34,9 +34,8 @@ def generate_image(image_prompt):
 st.subheader('DALL.E - Text-to-Image Generation - OpenAI')
 
 # text input box for image recognition
-img_description = st.text_input('Enter image prompt. e.g. dancing with wolves on a starry night')
+img_description = st.text_input('Enter image prompt. e.g. hyperrealistic, female web developer coding on a full moon night, back view, wide angle lens')
 
-if st.button('Generate Image'):
-    
+if st.button('Generate Image'):    
     generated_img = generate_image(img_description)
     st.image(generated_img)
