@@ -5,7 +5,7 @@ import streamlit as st
 from PIL import Image
 
 st.set_page_config(
-   layout="wide"
+   layout="wide",
    page_title="Streamlit iCodeIdoia",
    page_icon="images/ilpicon1.png",layout="wide",initial_sidebar_state="expanded"
 )
