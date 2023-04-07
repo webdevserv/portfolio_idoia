@@ -8,10 +8,16 @@ import numpy as np
 import requests
 from io import BytesIO
 
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
 st.set_page_config(
    page_title="Streamlit iCodeIdoia",
    page_icon="images/icon.png",layout="wide",initial_sidebar_state="expanded"
 )
+# ---- LOAD
+local_css("styles/style.css")
 
 st.image("images/banner.jpg")
 
