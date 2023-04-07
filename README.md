@@ -51,3 +51,4 @@ For example:
   Local URL: http://localhost:8501
   Network URL: http://192.168.7.230:8501
 
+pip install streamlit-extras  for streamlit-extras library

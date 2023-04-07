@@ -6,12 +6,19 @@ import urllib.request
 from PIL import Image
 import streamlit as st
 
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
 openai.api_key = "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"
 
 st.set_page_config(
    page_title="Streamlit iCodeIdoia",
    page_icon="images/icon.png",layout="wide",initial_sidebar_state="expanded"
 )
+
+# ---- LOAD
+local_css("styles/style.css")
 
 st.image("images/banner.jpg")
 
@@ -23,12 +30,12 @@ def generate_image(image_prompt):
 
  img_url = img_response['data'][0]['url']
 
- urllib.request.urlretrieve(img_url, 'image.png')
+ urllib.request.urlretrieve(img_url, 'output/image.png')
  #replace cv2 for PIL
  #img = cv2.imread("image.png")
  #cv2_imshow(img)
 
- img = Image.open("image.png")
+ img = Image.open("output/image.png")
  return img
 
 st.subheader('DALL.E - Text-to-Image Generation - OpenAI')
