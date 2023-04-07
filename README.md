@@ -52,3 +52,5 @@ For example:
   Network URL: http://192.168.7.230:8501
 
 pip install streamlit-extras  for streamlit-extras library
+
+python -m pip install --upgrade pip
