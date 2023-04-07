@@ -28,6 +28,7 @@ styles/.....................CSS style sheets
 js/.........................javascript
 samples/....................useful images for the applications demonstrations
 screens/....................screenshots of the application
+output/.....................output folder
 
 
 # Instructions
@@ -51,6 +52,13 @@ For example:
   Local URL: http://localhost:8501
   Network URL: http://192.168.7.230:8501
 
+# library
+
 pip install streamlit-extras  for streamlit-extras library
 
+# requirements.txt minimal environment requirements
+
 python -m pip install --upgrade pip
+
+pip install pipreqs  
+pipreqs C:\Users\path\portfolio_idoia/ --force
