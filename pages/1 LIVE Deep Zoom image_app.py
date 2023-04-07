@@ -3,7 +3,7 @@
 """
 import streamlit as st
 import os
-import deepzoom
+#import deepzoom
 import streamlit.components.v1 as components
 
 def local_css(file_name):
