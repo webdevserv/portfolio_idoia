@@ -62,3 +62,7 @@ python -m pip install --upgrade pip
 
 pip install pipreqs  
 pipreqs C:\Users\path\portfolio_idoia/ --force
+
+# for Dall-e 
+
+pip install openai
