@@ -1,10 +1,11 @@
 """
 @author: idoia lerchundi
 """
-import openai
 import urllib.request
-from PIL import Image
+import openai
 import streamlit as st
+from PIL import Image
+
 
 def local_css(file_name):
     with open(file_name) as f:
