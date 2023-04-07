@@ -52,17 +52,14 @@ For example:
   Local URL: http://localhost:8501
   Network URL: http://192.168.7.230:8501
 
-# library
+# insptall PIP requirements
 
-pip install streamlit-extras  for streamlit-extras library
-
-# requirements.txt minimal environment requirements
-
-python -m pip install --upgrade pip
-
-pip install pipreqs  
-pipreqs C:\Users\path\portfolio_idoia/ --force
+pip install -r portfolio_idoia\requirements.txt
 
 # for Dall-e 
 
 pip install openai
+
+# library streamlit-extras 
+
+pip install streamlit-extras  for streamlit-extras library
