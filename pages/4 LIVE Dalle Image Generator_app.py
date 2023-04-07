@@ -1,9 +1,9 @@
 """
 @author: idoia lerchundi
 """
+import streamlit as st
 import urllib.request
 import openai
-import streamlit as st
 from PIL import Image
 
 
