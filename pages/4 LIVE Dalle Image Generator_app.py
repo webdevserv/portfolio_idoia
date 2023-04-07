@@ -1,25 +1,27 @@
 """
 @author: idoia lerchundi
 """
-import os
 import streamlit as st
 import urllib.request
 import openai
 from PIL import Image
-
 
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 #openai.api_key = "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"
-OPENAI_API_KEY = "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"
-openai.api_key = os.getenv("OPENAI_API_KEY")
+
+#original it was working
+openai.api_key = "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"
+
+#OPENAI_API_KEY = "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"
+#openai.api_key = os.getenv(OPENAI_API_KEY)
 
 #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
 st.set_page_config(
    page_title="Streamlit iCodeIdoia",
-   page_icon="images/icon.png",layout="wide",initial_sidebar_state="expanded"
+   page_icon="images/ilpicon1.png",layout="wide",initial_sidebar_state="expanded"
 )
 
 # ---- LOAD

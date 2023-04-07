@@ -12,7 +12,7 @@ def local_css(file_name):
 
 st.set_page_config(
    page_title="Streamlit iCodeIdoia",
-   page_icon="images/icon.png",layout="wide",initial_sidebar_state="expanded"
+   page_icon="images/ilpicon1.png",layout="wide",initial_sidebar_state="expanded"
 )
 
 # ---- LOAD
@@ -32,7 +32,6 @@ def create_deepzoom_img(SOURCE):
     image_quality=0.9,
     resize_filter="bicubic"        
  )
-
  creator.create(SOURCE, "images/societa.dzi")
 
 def view_versalles():
