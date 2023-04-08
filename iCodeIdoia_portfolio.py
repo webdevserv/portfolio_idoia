@@ -71,12 +71,12 @@ with tab2:
 with tab3: 
     col1, col2 =  st.columns([2,3])
     with col1:
-      youtube_html = """<iframe width="330" height="805" scroll="no" src="https://webdevserv.github.io/html_bites/icecream.html" title="static html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>"""
+      youtube_html = """<iframe width="330" height="820" overflow="hidden!important;" src="https://webdevserv.github.io/html_bites/icecream.html" title="static html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>"""
       st.markdown(youtube_html, unsafe_allow_html=True)
       link_html="""<a href="https://webdevserv.github.io/html_bites/icecream.html" target="_blank">Static HTML site</a> in new window."""
       st.markdown(link_html, unsafe_allow_html=True)
 
-      youtube1_html = """<iframe width="330" height="805" scroll="no" src="https://webdevserv.github.io/html_bites/planet.html" title="static html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>"""
+      youtube1_html = """<iframe width="330" height="810" overflow="hidden!important;" src="https://webdevserv.github.io/html_bites/planet.html" title="static html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>"""
       st.markdown(youtube1_html, unsafe_allow_html=True)
       link_html="""<a href="https://webdevserv.github.io/html_bites/planet.html" target="_blank">Static HTML site</a> in new window."""
       st.markdown(link_html, unsafe_allow_html=True)
