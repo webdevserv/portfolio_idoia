@@ -15,9 +15,10 @@ st.set_page_config(
    page_icon="images/ilpicon1.png",layout="wide",initial_sidebar_state="expanded"
 )
 
+st.image("images/banner.jpg")
+
 # ---- LOAD
 local_css("styles/style.css")
-st.image("images/banner.jpg")
 
 # Specify your source image
 #SOURCE = "https://raw.githubusercontent.com/webdevserv/images_video/main/ref/imgsrc/playa.jpg"

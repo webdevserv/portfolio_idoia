@@ -16,10 +16,11 @@ st.set_page_config(
    page_title="Streamlit iCodeIdoia",
    page_icon="images/ilpicon1.png",layout="wide",initial_sidebar_state="expanded"
 )
-# ---- LOAD
-local_css("styles/style.css")
 
 st.image("images/banner.jpg")
+
+# ---- LOAD
+local_css("styles/style.css")
 
 def fill_square_image(img):
     imgsz = [img.height, img.width]
