@@ -1,9 +1,11 @@
 """
 @author: idoia lerchundi
 """
-import streamlit as st
-import urllib.request
 import openai
+import urllib.request
+from PIL import Image
+import streamlit as st
+
 from PIL import Image
 
 def local_css(file_name):
@@ -20,8 +22,12 @@ st.image("images/banner.jpg")
 # ---- LOAD
 local_css("styles/style.css")
 #openai.api_key = "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"
+
 #original it was working
-openai.api_key = "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"
+#openai.api_key = "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"
+
+openai.api_key = "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"
+
 #OPENAI_API_KEY = "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"
 #openai.api_key = os.getenv(OPENAI_API_KEY)
 #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
@@ -43,7 +49,7 @@ def generate_image(image_prompt):
  return img
 
 st.subheader('DALL.E - Text-to-Image Generation - OpenAI')
-
+st.caption("Unfortunately OpenAI says 'Billing hard limit has been reached', sorry this functionality is no longer available.")
 # text input box for image recognition
 img_description = st.text_input('Enter image prompt. e.g. hyperrealistic, female web developer coding on a full moon night, back view, wide angle lens')
 
