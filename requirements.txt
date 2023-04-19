@@ -5,3 +5,7 @@ rembg==2.0.30
 requests==2.25.1
 streamlit==1.20.0
 streamlit_extras==0.2.7
+requests
+lxml
+fbprophet
+plotly
