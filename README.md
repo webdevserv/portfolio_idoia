@@ -1,5 +1,5 @@
-# T81 558:Applications of Deep Neural Networks
-Web Developer: [Idoia Lerchundi, New York, USA](https://live-webdevserv.pantheonsite.io)
+# readme
+Web Developer: [Idoia, New York, USA](https://live-webdevserv.pantheonsite.io)
 
 **The content of this page changes as technology evolves**, to keep up to date with changes [follow me on GitHub](https://github.com/webdevserv/portfolio_idoia).
 
