@@ -23,7 +23,7 @@ img_art = Image.open("images/add-black-headphones-302253249.png")
 with st.container():            
     contact_form = """
     <p>If you're interested in working together or have any questions about my work, please don’t hesitate <a href="https://live-webdevserv.pantheonsite.io/contact/">to get in touch</a>.</p>
-    <form action="private007@lineone.net" method="POST">
+    <form action="email@disabled.com" method="POST">
         <input type="hidden" name="_captcha" value="false" disabled >
         <input type="text" name="name" placeholder="Name" required disabled>
         <input type="text" name="company" placeholder="Company" required disabled>

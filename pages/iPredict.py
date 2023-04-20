@@ -1,6 +1,3 @@
-"""
-@author: idoia lerchundi
-"""
 import streamlit as st
 from datetime import date, datetime, timedelta
 
@@ -8,21 +5,9 @@ import yfinance as yf
 import pandas as pd
 from prophet import Prophet
 from prophet.plot import plot_plotly
+
+
 from plotly import graph_objs as go
-
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-st.set_page_config(
-   page_title="Streamlit iCodeIdoia",
-   page_icon="images/ilpicon1.png",layout="wide",initial_sidebar_state="expanded"
-)
-
-st.image("images/banner.jpg")
-
-# ---- LOAD
-local_css("styles/style.css")
 
 TODAY = date.today().strftime("%Y-%m-%d")
 
@@ -82,9 +67,10 @@ forecast = m.predict(future)
 st.subheader('Forecast data')
 st.write(forecast.tail())
 
+st.write('forecast data')
 fig1 = plot_plotly(m,forecast)
 st.plotly_chart(fig1)
 
-st.subheader('Forecast trend and weekly')
+st.write('forecast components')
 fig2 = m.plot_components(forecast)
 st.write(fig2)
