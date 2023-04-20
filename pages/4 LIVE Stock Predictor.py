@@ -51,7 +51,7 @@ start_date = x_years_ago.strftime('%Y-%m-%d')
 
 
 period = n_years * 365
-end_date = today + timedelta(days=period)
+end_date = today + timedelta(days=period) - today
 
 #data = yf.download("SPY AAPL", start="2017-01-01", end="2017-04-30")
 
