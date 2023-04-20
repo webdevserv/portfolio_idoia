@@ -28,18 +28,28 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title("Stock Predictor App")
 
-stocks=("GOOGL","NVDIA","MSFT","META","MELI")
-selected_stock = st.selectbox("Select ticker symbol", stocks)
+#col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns([1,1,2], gap="small")
 
-#select history
-yearsago = (1, 2, 4, 6, 8, 10, 12, 14)
-selected_history = st.selectbox("Select years of history to view", yearsago)
+with col1:
+    #ticker symbols
+    stocks=("GOOGL","NVDIA","MSFT","META","MELI")
+    selected_stock = st.selectbox("Select ticker symbol", stocks)
+    n_years = st.slider("Years of prediction:", 1, 5)
+
+with col2:
+    #years history
+    yearsago = (1, 2, 4, 5, 6, 8, 10, 12, 14)
+    selected_history = st.selectbox("Select years of history to view", yearsago)
+
+with col3:
+   st.write("") 
 
 today = datetime.now()
 x_years_ago = today - timedelta(days=365*selected_history)
 start_date = x_years_ago.strftime('%Y-%m-%d')
 
-n_years = st.slider("Years of prediction:", 1, 4)
+
 period = n_years * 365
 end_date = today + timedelta(days=period)
 
@@ -85,6 +95,10 @@ st.write(forecast.tail())
 fig1 = plot_plotly(m,forecast)
 st.plotly_chart(fig1)
 
-st.subheader('Forecast trend and weekly')
-fig2 = m.plot_components(forecast)
-st.write(fig2)
+col1, col2 = st.columns(2)
+with col1:
+    st.subheader('Forecast trend and weekly')
+    fig2 = m.plot_components(forecast)
+    st.write(fig2)
+with col2:
+     st.write("")
