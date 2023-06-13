@@ -33,7 +33,7 @@ col1, col2, col3 = st.columns([1,1,2], gap="small")
 
 with col1:
     #ticker symbols
-    stocks=("GOOGL","NVDIA","MSFT","META","MELI")
+    stocks=("MSFT","META","MELI","GOOGL","NVDIA")
     selected_stock = st.selectbox("Select ticker symbol", stocks)
     n_years = st.slider("Years of prediction:", 1, 5)
 
@@ -84,7 +84,19 @@ df_train = data[['Date','Close']]
 df_train = df_train.rename(columns={'Date':'ds', 'Close':'y'})
 
 m = Prophet()
-m.fit(df_train)
+
+# Check if the DataFrame has at least 2 non-NaN rows
+if df_train.dropna().shape[0] >= 2:
+     m.fit(df_train)
+else: 
+   #df_filled = df_train.fillna(0)
+    # Remove rows with missing data
+    st.write("DataFrame does not have enough valid data to perform the operation you're trying to do. Try another ticker symbol.")
+    df_clean = df_train.fillna(0)
+    #df_clean = df_train.dropna()    
+    m.fit(df_clean)
+    #print('DataFrame does not have enough valid rows')
+
 #dataframes
 future = m.make_future_dataframe(periods=period)
 forecast = m.predict(future)

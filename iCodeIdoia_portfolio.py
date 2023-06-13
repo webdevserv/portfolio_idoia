@@ -32,30 +32,44 @@ with st.container():
  st.markdown(link_html, unsafe_allow_html=True)
 
 # ---- TABS
-tab1, tab2, tab3 = st.tabs(["some projects","more videos","some statics html"])
+tab1, tab2, tab3 = st.tabs(["some projects","more videos","some static HTML/CSS"])
+# --- PRELOADS
+img_model1 = Image.open("images/modeloutput.jpg")
+img_model2 = Image.open("images/modeloutput1.jpg")
 
 with tab1:
    col1, col2 =  st.columns([2,3])
    with col1: 
-      youtube_html = """<iframe height="400" src="https://youtube.com/embed/fnIzi-2sd3g?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>"""
-      st.markdown(youtube_html, unsafe_allow_html=True)
-      st.caption("youtube @WifiNow")
+      st.image(img_model1, width=400)  
+      st.caption("AI image classification output (Kaggle). Is it a portrait?")
+      link_html="""<p><strong>Kaggle</strong> <a href="https://www.kaggle.com/code/idoial/is-it-a-portrait-1st-model-from-my-data" target="_blank">jupyter notebook code</a>.</p>"""
+      st.markdown(link_html, unsafe_allow_html=True)
+
+      st.image(img_model2, width=400)      
+      st.caption("AI image classification output (Kaggle). Is the person an alleged criminal?")
+      link_html="""<p><strong>Kaggle</strong> <a href="https://www.kaggle.com/code/idoial/alleged-criminal-yes-no-1st-model-from-your-own" target="_blank">jupyter notebook code</a>.</p>"""
+      st.markdown(link_html, unsafe_allow_html=True)
    with col2:
          st.write(
          """
-         I am passionate about ML. Some of the projects I have worked on include:
-         
+         ML focus. Some of the projects I have worked on include:
+         - Image classification model Kaggle (it it a portrait or a street photo?) FastAI library.
          - Responsive HTML, CSS templates, Figma, Photoshop, Stable Diffusion.
-         - Exploring GANs (Generative Adversarial Network) using Google Colab and Jupyter notebooks.
+         - GANs (Generative Adversarial Network) using Google Colab and Jupyter notebooks.
          - Building interactive web apps with Python and Streamlit to showcase ML models.
          - Developing and deploying ML models with Django framework.
          - Creating and styling web apps with Angular and Bootstrap.
+         - WP child theme creation.
          """)
          button(username="artgen", floating=False, width=221)
 
 with tab2: 
     col1, col2 =  st.columns([2,3])
     with col1:
+      youtube_html = """<iframe height="400" src="https://youtube.com/embed/fnIzi-2sd3g?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>"""
+      st.markdown(youtube_html, unsafe_allow_html=True)
+      st.caption("youtube @WifiNow")
+    
       youtube_html = """<iframe width="330" height="350" src="https://www.youtube.com/embed/0TCMxuZguY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>"""
       st.markdown(youtube_html, unsafe_allow_html=True)
       st.caption("youtube @WifiNow")
