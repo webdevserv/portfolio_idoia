@@ -41,12 +41,12 @@ with tab1:
    col1, col2 =  st.columns([2,3])
    with col1: 
       st.image(img_model1, width=400)  
-      st.caption("AI image classification output (Kaggle). Is it a portrait?")
+      st.caption("AI image detection, Computer Vision (Kaggle). Is it a portrait?")
       link_html="""<p><strong>Kaggle</strong> <a href="https://www.kaggle.com/code/idoial/is-it-a-portrait-1st-model-from-my-data" target="_blank">jupyter notebook code</a>.</p>"""
       st.markdown(link_html, unsafe_allow_html=True)
 
       st.image(img_model2, width=400)      
-      st.caption("AI image classification output (Kaggle). Is the person an alleged criminal?")
+      st.caption("AI image detection, Computer Vision (Kaggle). Is the person an alleged criminal?")
       link_html="""<p><strong>Kaggle</strong> <a href="https://www.kaggle.com/code/idoial/alleged-criminal-yes-no-1st-model-from-your-own" target="_blank">jupyter notebook code</a>.</p>"""
       st.markdown(link_html, unsafe_allow_html=True)
    with col2:
