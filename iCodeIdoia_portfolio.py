@@ -45,10 +45,7 @@ with tab1:
       link_html="""<p><strong>Kaggle</strong> <a href="https://www.kaggle.com/code/idoial/is-it-a-portrait-1st-model-from-my-data" target="_blank">jupyter notebook code</a>.</p>"""
       st.markdown(link_html, unsafe_allow_html=True)
 
-      st.image(img_model2, width=400)      
-      st.caption("AI image detection, Computer Vision (Kaggle). Is the person an alleged criminal?")
-      link_html="""<p><strong>Kaggle</strong> <a href="https://www.kaggle.com/code/idoial/alleged-criminal-yes-no-1st-model-from-your-own" target="_blank">jupyter notebook code</a>.</p>"""
-      st.markdown(link_html, unsafe_allow_html=True)
+
    with col2:
          st.write(
          """
@@ -66,6 +63,12 @@ with tab1:
 with tab2: 
     col1, col2 =  st.columns([2,3])
     with col1:
+
+      vimeo_html = """<a href="https://vimeo.com/413606833" target="_blank">Python app using cv2/dlib library</a> in new window."""
+      st.markdown(vimeo_html, unsafe_allow_html=True)
+      st.caption("python app using cv2 library")
+    
+
       youtube_html = """<iframe height="400" src="https://youtube.com/embed/fnIzi-2sd3g?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>"""
       st.markdown(youtube_html, unsafe_allow_html=True)
       st.caption("youtube @WifiNow")
