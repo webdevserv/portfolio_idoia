@@ -11,10 +11,7 @@ st.set_page_config(
 from PIL import Image
 import time
 import streamlit.components.v1 as components
-
-
-"""from streamlit_extras.buy_me_a_coffee import button"""
-
+from streamlit_extras.buy_me_a_coffee import button
 
 def local_css(file_name):
     with open(file_name) as f:
