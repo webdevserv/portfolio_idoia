@@ -9,3 +9,4 @@ lxml
 plotly==5.18.0
 prophet==1.1.5
 yfinance==0.2.36
+streamlit_extras
