@@ -1,20 +1,23 @@
 """
 @author: idoia lerchundi
 """
-from streamlit_extras.buy_me_a_coffee import button
 import streamlit as st
+st.set_page_config(
+   page_title="iCodeIdoia",
+   page_icon="images/ilpicon1.png",
+   layout="wide",
+   initial_sidebar_state="expanded"
+)
 from PIL import Image
 import time
 import streamlit.components.v1 as components
+from streamlit_extras.buy_me_a_coffee import button
 
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-st.set_page_config(
-   page_title="iCodeIdoia",
-   page_icon="images/ilpicon1.png",layout="wide",initial_sidebar_state="expanded"
-)
+
 st.image("images/banner.jpg")
 st.subheader("iCode Portfolio :wave: via Streamlit")
 
@@ -57,7 +60,7 @@ with tab1:
          - Creating and styling web apps with Angular and Bootstrap.
          - WP child theme creation.
          """)
-         button(username="artgen", floating=False, width=221)
+         """button(username="artgen", floating=False, width=221)"""
 
 with tab2: 
     col1, col2 =  st.columns([2,3])
