@@ -1,6 +1,7 @@
 """
 @author: idoia lerchundi
 """
+from io import BytesIO
 from PIL import Image,ImageFile
 import streamlit as st
 from rembg import remove
