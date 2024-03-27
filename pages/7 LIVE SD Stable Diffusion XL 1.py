@@ -1,13 +1,11 @@
 """
 @author: idoia lerchundi
 """
-import gradio as gr
 import urllib.request
 from PIL import Image
 import streamlit as st
 
 from transformers import AutoModel, AutoTokenizer
-from PIL import Image
 
 def local_css(file_name):
     with open(file_name) as f:
