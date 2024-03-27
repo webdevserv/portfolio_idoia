@@ -1,5 +1,5 @@
 """
-@author: idoia lerchundi
+@author: idoia lerchundi 
 """
 import urllib.request
 from PIL import Image
