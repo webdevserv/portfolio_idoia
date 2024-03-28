@@ -21,7 +21,7 @@ setuptools.setup(
     long_description=readme(),
     long_description_content_type="text/markdown",
     url="https://github.com/",
-    packages=setuptools.find_packages(),
+    packages=['streamlit_component_fill_square_cropper'],
     include_package_data=True,
     classifiers=[],
     python_requires=">=3.6",
