@@ -2,6 +2,7 @@
 """
 @author: idoia lerchundi
 """
+import os
 import streamlit.components.v1 as components
 from PIL import Image
 import numpy as np
