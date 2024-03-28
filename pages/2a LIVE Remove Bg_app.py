@@ -5,8 +5,7 @@ from io import BytesIO
 from PIL import Image,ImageFile
 import streamlit as st
 from rembg import remove
-from streamlit_component_remove_bg import remove_bg as imported_remove_bg
-from streamlit_component_remove_bg import remove_bg_demo as imported_remove_bgdemo
+#from io import BytesIO
 
 def local_css(file_name):
     with open(file_name) as f:
@@ -22,7 +21,31 @@ st.image("images/banner.jpg")
 # ---- LOAD
 local_css("styles/style.css")
 
+#Input and output as bytes DEMO
+def remove_bgdemo(input_path):
+ output_path = 'output/demooutput.png'
 
+ with open(input_path, 'rb') as i:
+    with open(output_path, 'wb') as o:
+        input = i.read()
+        output = remove(input)
+        #saves output
+        saving = o.write(output)
+
+ return output_path
+
+def remove_bg(input_path):
+ output_path = 'output/output.png'
+
+ with open(input_path, 'rb') as i:
+    with open(output_path, 'wb') as o:
+        input = i.read()
+        output = remove(input)
+        #saves output
+        #remove the output file
+        saving = o.write(output)
+
+ return output_path
 
 def main():     
    # ---- TABS
@@ -40,7 +63,7 @@ def main():
          sel_image = Image.open(url)
          st.image(sel_image)
 
-         generated_img = imported_remove_bgdemo(url)
+         generated_img = remove_bgdemo(url)
 
          st.text("Image background removed.")      
          st.image(generated_img)  
@@ -64,7 +87,7 @@ def main():
          if st.button('Remove background'):       
             st.text("Please wait a few seconds. Monitor top right of your screen.")            
             imagepath = imagepath + uploaded_file.name
-            generated_img = imported_remove_bg(inputpath)
+            generated_img = remove_bg(inputpath)
             st.text("Image background removed.")      
             st.image(generated_img)  
 
