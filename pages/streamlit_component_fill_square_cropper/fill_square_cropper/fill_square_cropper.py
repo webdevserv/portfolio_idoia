@@ -2,8 +2,9 @@
 """
 @author: idoia lerchundi
 """
+import streamlit.components.v1 as components
 from PIL import Image
-import streamlit as st
+import numpy as np
 
 def fill_square_image(img):
     imgsz = [img.height, img.width]
