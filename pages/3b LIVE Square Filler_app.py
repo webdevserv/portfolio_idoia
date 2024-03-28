@@ -7,7 +7,7 @@ import streamlit as st
 import numpy as np
 import requests
 from io import BytesIO
-from streamlit_component_fill_square_cropper import fill_square_cropper
+from streamlit_component_fill_square_cropper import fill_square_cropper as imported_fill_square_cropper
 
 def local_css(file_name):
     with open(file_name) as f:
@@ -40,14 +40,14 @@ with tab1:
     img = Image.open(BytesIO(response.content))
     img.load()
 
-    generated_img = fill_square_cropper(img)
+    generated_img = imported_fill_square_cropper(img)
     st.image(generated_img)
 
     response = requests.get(url2)
     img = Image.open(BytesIO(response.content))
     img.load()
 
-    generated_img = fill_square_cropper(img)
+    generated_img = imported_fill_square_cropper(img)
     st.image(generated_img)
    
 with tab2:
@@ -58,5 +58,5 @@ with tab2:
   if uploaded_file is not None: 
    img = Image.open(uploaded_file)
    img.load()
-   generated_img = fill_square_cropper(img)
+   generated_img = imported_fill_square_cropper(img)
    st.image(generated_img)
