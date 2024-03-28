@@ -6,7 +6,7 @@ import streamlit.components.v1 as components
 from PIL import Image
 import numpy as np
 
-def fill_square_image(img):
+def fill_square_cropper(img):
     imgsz = [img.height, img.width]
 
     original_size = imgsz
