@@ -17,6 +17,7 @@ setuptools.setup(
     name="streamlit_component_fill_square_cropper",
     version="0.5",
     author="Idoia Lertxundi",
+    author_email='idoiagoikoa@gmail.com',
     description="streamlit_component_fill_square_cropper, adds a filler when needed of the avg color pixel.",
     long_description=readme(),
     long_description_content_type="text/markdown",
