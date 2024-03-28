@@ -13,4 +13,3 @@ torchvision==0.8.2
 fastai==2.2.5
 pathlib
 streamlit-extras
-fill_square_cropper
