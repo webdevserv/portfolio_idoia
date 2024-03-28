@@ -40,14 +40,14 @@ with tab1:
     img = Image.open(BytesIO(response.content))
     img.load()
 
-    generated_img = fill_square_image(img)
+    generated_img = fill_square_cropper(img)
     st.image(generated_img)
 
     response = requests.get(url2)
     img = Image.open(BytesIO(response.content))
     img.load()
 
-    generated_img = fill_square_image(img)
+    generated_img = fill_square_cropper(img)
     st.image(generated_img)
    
 with tab2:
