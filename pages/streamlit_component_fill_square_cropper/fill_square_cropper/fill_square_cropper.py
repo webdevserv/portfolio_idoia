@@ -5,6 +5,8 @@
 import streamlit.components.v1 as components
 from PIL import Image
 import numpy as np
+import requests
+from io import BytesIO
 
 def fill_square_image(img):
     imgsz = [img.height, img.width]
