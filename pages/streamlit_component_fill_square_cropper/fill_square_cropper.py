@@ -7,7 +7,7 @@ from PIL import Image
 import numpy as np
 
 
-def fill_square_cropper(img: Image.Image):
+def fill_square_cropperpages(img: Image.Image):
     imgsz = [img.height, img.width]
 
     original_size = imgsz
