@@ -2,7 +2,7 @@ Metadata-Version: 2.1
 Name: streamlit-component-fill-square-cropper
 Version: 0.5
 Summary: streamlit_component_fill_square_cropper, adds a filler when needed of the avg color pixel.
-Home-page: https://github.com/
+Home-page: https://github.com/webdevserv/streamlit_component_fill_square_cropper
 Author: Idoia Lertxundi
 Author-email: idoiagoikoa@gmail.com
 Requires-Python: >=3.6
