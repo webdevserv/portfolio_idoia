@@ -28,7 +28,7 @@ tab1, tab2 = st.tabs(["Demo","Application"])
 
 with tab1:   
       # Handle first image
-      url = 'samples/1.jpg'
+      url = '../samples/1.jpg'
       
       st.subheader("Remove background from image demo")
       img_description = st.text('Image background will be removed.')
@@ -38,7 +38,7 @@ with tab1:
          sel_image = Image.open(url)
          st.image(sel_image)
 
-         generated_img = imported_remove_bg('samples/1.jpg')
+         generated_img = imported_remove_bg(url)
 
          st.text("Image background removed.")      
          #st.image(generated_img)  
