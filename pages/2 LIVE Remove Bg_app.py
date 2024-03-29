@@ -6,7 +6,6 @@ from PIL import Image,ImageFile
 import streamlit as st
 from rembg import remove
 from streamlit_component_remove_bg import remove_bg as imported_remove_bg
-from streamlit_component_remove_bg import remove_bg_demo as imported_remove_bgdemo
 
 def local_css(file_name):
     with open(file_name) as f:
@@ -21,8 +20,6 @@ st.image("images/banner.jpg")
 
 # ---- LOAD
 local_css("styles/style.css")
-
-
 
 def main():     
    # ---- TABS
@@ -40,7 +37,7 @@ def main():
          sel_image = Image.open(url)
          st.image(sel_image)
 
-         generated_img = imported_remove_bgdemo(url)
+         generated_img = imported_remove_bg(url)
 
          st.text("Image background removed.")      
          st.image(generated_img)  
