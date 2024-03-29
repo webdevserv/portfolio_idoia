@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: streamlit-component-fill-square-cropper
+Version: 0.5
+Summary: streamlit_component_fill_square_cropper, adds a filler when needed of the avg color pixel.
+Home-page: https://github.com/
+Author: Idoia Lertxundi
+Author-email: idoiagoikoa@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Streamlit - Component Remove bg - Demo
+
+Streamlit Component Remove bg 
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://webdevserv-portfolio-idoia-icodeidoia-portfolio-9kblei.streamlit.app/LIVE_Remove_Bg_app)
