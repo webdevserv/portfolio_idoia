@@ -37,7 +37,7 @@ def main():
          sel_image = Image.open(url)
          st.image(sel_image)
 
-         generated_img = imported_remove_bg(url)
+         generated_img = imported_remove_bg(sel_image)
 
          st.text("Image background removed.")      
          st.image(generated_img)  
