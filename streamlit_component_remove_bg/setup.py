@@ -30,5 +30,6 @@ setuptools.setup(
         "Pillow",
         "numpy",
         "streamlit",
+        "rembg"
     ]
 )
