@@ -2,8 +2,9 @@
 """
 @author: idoia lerchundi
 """
-import os
+
 import streamlit.components.v1 as components
+import os
 from io import BytesIO
 from PIL import Image,ImageFile
 from rembg import remove
