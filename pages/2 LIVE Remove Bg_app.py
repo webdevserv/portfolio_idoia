@@ -22,11 +22,11 @@ st.image("images/banner.jpg")
 # ---- LOAD
 local_css("styles/style.css")
 
-def main():     
+   
    # ---- TABS
-   tab1, tab2 = st.tabs(["Demo","Application"])
+tab1, tab2 = st.tabs(["Demo","Application"])
 
-   with tab1:   
+with tab1:   
       # Handle first image
       url = 'samples/1.jpg'
       
@@ -43,7 +43,7 @@ def main():
          st.text("Image background removed.")      
          #st.image(generated_img)  
 
-   with tab2:  
+with tab2:  
       st.subheader("Remove background from image, place image in samples folder.")
 
       uploaded_file = st.file_uploader("Upload an image. e.g. Select 1_for_super_resolution.jpg from samples folder.", type=['png', 'jpg', 'jpeg', 'gif'])
@@ -64,7 +64,4 @@ def main():
             imagepath = imagepath + uploaded_file.name
             generated_img = imported_remove_bg(inputpath)
             st.text("Image background removed.")      
-            st.image(generated_img)  
-
-if __name__ == "__main__":
-    main()
+            st.image(generated_img)
