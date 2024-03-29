@@ -28,7 +28,7 @@ tab1, tab2 = st.tabs(["Demo","Application"])
 
 with tab1:   
       # Handle first image
-      url = 'samples/1.jpg'
+      url = "samples/1.jpg"
       
       st.subheader("Remove background from image demo")
       img_description = st.text('Image background will be removed.')
