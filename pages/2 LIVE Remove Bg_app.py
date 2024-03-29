@@ -38,7 +38,7 @@ with tab1:
          sel_image = Image.open(url)
          st.image(sel_image)
 
-         generated_img = imported_remove_bg(url)
+         generated_img = imported_remove_bg('samples/1.jpg')
 
          st.text("Image background removed.")      
          #st.image(generated_img)  
