@@ -6,7 +6,7 @@ import urllib.request
 from io import BytesIO
 from PIL import Image,ImageFile
 from rembg import remove
-from streamlit_component_remove_bg import remove_bg as imported_remove_bg
+from streamlit_component_remove_bg import remove_bg as rembg
 
 def local_css(file_name):
     with open(file_name) as f:
@@ -38,7 +38,7 @@ with tab1:
          sel_image = Image.open(url)
          st.image(sel_image)
 
-         generated_img = imported_remove_bg(url)
+         generated_img = rembg(url)
 
          st.text("Image background removed.")      
          #st.image(generated_img)  
@@ -62,6 +62,6 @@ with tab2:
          if st.button('Remove background'):       
             st.text("Please wait a few seconds. Monitor top right of your screen.")            
             imagepath = imagepath + uploaded_file.name
-            generated_img = imported_remove_bg(inputpath)
+            generated_img = rembg(inputpath)
             st.text("Image background removed.")      
             st.image(generated_img)

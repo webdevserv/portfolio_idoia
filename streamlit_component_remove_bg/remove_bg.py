@@ -21,6 +21,6 @@ def remove_bg(input_path):
         #remove the output file
         saving = o.write(output)
 
- return output_path
+ return output
 
 
