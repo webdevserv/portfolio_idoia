@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+streamlit_component_fill_square_cropper/__init__.py
+streamlit_component_fill_square_cropper/setup.py
+streamlit_component_square_fill_cropper_webdevserv.egg-info/PKG-INFO
+streamlit_component_square_fill_cropper_webdevserv.egg-info/SOURCES.txt
+streamlit_component_square_fill_cropper_webdevserv.egg-info/dependency_links.txt
+streamlit_component_square_fill_cropper_webdevserv.egg-info/requires.txt
+streamlit_component_square_fill_cropper_webdevserv.egg-info/top_level.txt
