@@ -1,9 +1,10 @@
 """
 @author: idoia lerchundi
 """
+import streamlit as st
+import urllib.request
 from io import BytesIO
 from PIL import Image,ImageFile
-import streamlit as st
 from rembg import remove
 from streamlit_component_remove_bg import remove_bg as imported_remove_bg
 
