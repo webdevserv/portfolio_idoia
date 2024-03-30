@@ -1,0 +1,17 @@
+[project]
+name = "streamlit_component_square_fill_cropper_webdevserv"
+version = "0.0.1"
+authors = [
+  { name="Example Author", email="idoia@goikoa.gmail.com" },
+]
+description = "streamlit_component_square_fill_cropper"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/webdevserv/streamlit_component_fill_square_cropper"
