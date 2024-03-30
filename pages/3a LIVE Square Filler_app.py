@@ -7,7 +7,7 @@ import streamlit as st
 import numpy as np
 import requests
 from io import BytesIO
-from streamlit_component_square_fill_cropper1_webdevserv import square_fill_cropper as scropper
+from streamlit_component_square_fill_cropper101 import square_fill_cropper as scropper
 
 def local_css(file_name):
     with open(file_name) as f:
