@@ -1,17 +1,17 @@
 Metadata-Version: 2.1
-Name: streamlit_component_square_fill_cropper_webdevserv
-Version: 0.0.0
-Summary: streamlit_component_square_fill_cropper
+Name: ilp
+Version: 0.0.1
+Summary: A small example package
 Home-page: https://github.com/webdevserv/streamlit_component_fill_square_cropper
 Author: Idoia Lertxundi
-Author-email: Example Author <idoia@goikoa.gmail.com>
-Project-URL: Homepage, https://github.com/webdevserv/streamlit_component_fill_square_cropper
+Author-email: Example Author <author@example.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
-License-File: LICENSE.txt
 
 # Streamlit - Component Remove bg - Demo
 

@@ -7,6 +7,7 @@ import streamlit as st
 import numpy as np
 import requests
 from io import BytesIO
+from streamlit_component_square_fill_cropper1_webdevserv import square_fill_cropper as scropper
 
 def local_css(file_name):
     with open(file_name) as f:
@@ -22,45 +23,45 @@ st.image("images/banner.jpg")
 # ---- LOAD
 local_css("styles/style.css")
 
-def fill_square_image(img):
-    imgsz = [img.height, img.width]
+#def fill_square_image(img):
+#    imgsz = [img.height, img.width]
 
-    original_size = imgsz
+#    original_size = imgsz
 
-    smallestsize = min(imgsz)
-    biggestsize = max(imgsz)
+#    smallestsize = min(imgsz)
+#    biggestsize = max(imgsz)
 
-    #get vertical color filler
-    avg_color_per_row = np.average(img, axis=0)
-    avg_color = np.average(avg_color_per_row, axis=0)
+#    #get vertical color filler
+#    avg_color_per_row = np.average(img, axis=0)
+#    avg_color = np.average(avg_color_per_row, axis=0)
 
-    if img.height > img.width:
-      #height is bigger than width
-      area = (0, 0, img.width + (img.height - img.width),img.height)
-      cropped_img = img.crop(area)
-      newimgsz = [cropped_img.height, cropped_img.width]
+#    if img.height > img.width:
+#      #height is bigger than width
+#      area = (0, 0, img.width + (img.height - img.width),img.height)
+#      cropped_img = img.crop(area)
+#      newimgsz = [cropped_img.height, cropped_img.width]
     
-      newimg = Image.new('RGB', ([newimgsz[1],newimgsz[0]]), (round(avg_color[0]), round(avg_color[1]), round(avg_color[2])))
+#      newimg = Image.new('RGB', ([newimgsz[1],newimgsz[0]]), (round(avg_color[0]), round(avg_color[1]), round(avg_color[2])))
 
-      newpos = (img.height-img.width)
-      newpos = newpos/2
-      newimg.paste(img,(int(newpos),0))
+#      newpos = (img.height-img.width)
+#      newpos = newpos/2
+#      newimg.paste(img,(int(newpos),0))
 
-      return newimg
+#      return newimg
 
-    #vertically add color
-    if img.width > img.height: 
-      area = (0, 0, img.width, img.height+ (img.width - img.height))
-      cropped_img = img.crop(area)
-      newimgsz = [cropped_img.height, cropped_img.width]
+#    #vertically add color
+#    if img.width > img.height: 
+#      area = (0, 0, img.width, img.height+ (img.width - img.height))
+#      cropped_img = img.crop(area)
+#      newimgsz = [cropped_img.height, cropped_img.width]
     
-      newimg = Image.new('RGB', ([newimgsz[1],newimgsz[0]]), (round(avg_color[0]), round(avg_color[1]), round(avg_color[2])))
+#      newimg = Image.new('RGB', ([newimgsz[1],newimgsz[0]]), (round(avg_color[0]), round(avg_color[1]), round(avg_color[2])))
  
-      newpos = (img.width-img.height)
-      newpos = newpos/2
-      newimg.paste(img,(0,(int(newpos))))
+#      newpos = (img.width-img.height)
+#      newpos = newpos/2
+#      newimg.paste(img,(0,(int(newpos))))
 
-      return newimg
+#      return newimg
 
 # ---- TABS
 tab1, tab2 = st.tabs(["Demo","Application"])
@@ -79,14 +80,14 @@ with tab1:
     img = Image.open(BytesIO(response.content))
     img.load()
 
-    generated_img = fill_square_image(img)
+    generated_img = scropper.fill_square_image(img)
     st.image(generated_img)
 
     response = requests.get(url2)
     img = Image.open(BytesIO(response.content))
     img.load()
 
-    generated_img = fill_square_image(img)
+    generated_img = scropper.fill_square_image(img)
     st.image(generated_img)
    
 with tab2:
@@ -97,5 +98,5 @@ with tab2:
   if uploaded_file is not None: 
    img = Image.open(uploaded_file)
    img.load()
-   generated_img = fill_square_image(img)
+   generated_img = scropper.fill_square_image(img)
    st.image(generated_img)
