@@ -17,12 +17,13 @@ st.subheader("Get in touch")
 
 # ---- LOAD ASSETS 
 local_css("styles/style.css")
-img_working = Image.open("images/idoia_working.gif")
+
 img_art = Image.open("images/add-black-headphones-302253249.png")
 
 with st.container():            
     contact_form = """
-    <p>If you're interested in working together or have any questions about my work, please don’t hesitate <a href="https://live-webdevserv.pantheonsite.io/contact/">to get in touch</a>.</p>
+    <p>Should interested in working together or have any questions about my work, please don’t hesitate <a href="https://live-webdevserv.pantheonsite.io/contact/">to get in touch</a>.
+    <a href="https://webdevserv.github.io/html_bites/dev/webdev.html">More info</a>.</p>
     <form action="email@disabled.com" method="POST">
         <input type="hidden" name="_captcha" value="false" disabled >
         <input type="text" name="name" placeholder="Name" required disabled>

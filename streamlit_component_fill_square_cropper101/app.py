@@ -14,61 +14,22 @@ from streamlit_component_fill_square_cropper101 import fill_square_cropper
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+        
 
 st.set_page_config(
    page_title="Streamlit iCodeIdoia",
    page_icon="images/ilpicon1.png",layout="wide",initial_sidebar_state="expanded"
 )
-
+img_art = Image.open("images/add-black-headphones-302253249.png")
 st.image("images/banner.jpg")
 
 # ---- LOAD
 local_css("styles/style.css")
 
-#def fill_square_cropper(img):
-#    imgsz = [img.height, img.width]
-
-#    original_size = imgsz
-
-#    smallestsize = min(imgsz)
-#    biggestsize = max(imgsz)
-
-#    #get vertical color filler
-#    avg_color_per_row = np.average(img, axis=0)
-#    avg_color = np.average(avg_color_per_row, axis=0)
-
-#    if img.height > img.width:
-#      #height is bigger than width
-#      area = (0, 0, img.width + (img.height - img.width),img.height)
-#      cropped_img = img.crop(area)
-#      newimgsz = [cropped_img.height, cropped_img.width]
-    
-#      newimg = Image.new('RGB', ([newimgsz[1],newimgsz[0]]), (round(avg_color[0]), round(avg_color[1]), round(avg_color[2])))
-
-#      newpos = (img.height-img.width)
-#      newpos = newpos/2
-#      newimg.paste(img,(int(newpos),0))
-
-#      return newimg
-
-#    #vertically add color
-#    if img.width > img.height: 
-#      area = (0, 0, img.width, img.height+ (img.width - img.height))
-#      cropped_img = img.crop(area)
-#      newimgsz = [cropped_img.height, cropped_img.width]
-    
-#      newimg = Image.new('RGB', ([newimgsz[1],newimgsz[0]]), (round(avg_color[0]), round(avg_color[1]), round(avg_color[2])))
- 
-#      newpos = (img.width-img.height)
-#      newpos = newpos/2
-#      newimg.paste(img,(0,(int(newpos))))
-
-#      return newimg
-
 def main() -> None:
 
  # ---- TABS
- tab1, tab2 = st.tabs(["Demo","Application"])
+ tab1, tab2, tab3 = st.tabs(["Demo","Application","Contact"])
 
  with tab1:   
    # Handle first image
@@ -104,6 +65,14 @@ def main() -> None:
      img.load()
      generated_img = fill_square_cropper(img)
      st.image(generated_img)
+ with tab3:
+    st.subheader("Contact")
+    left_column, right_column = st.columns([1,2], gap="small")
+    with left_column:
+        st.markdown('<a href="https://webdevserv.github.io/html_bites/dev/webdev.html">More info</a>', unsafe_allow_html=True)
+    with right_column:
+        #st.empty()
+        st.image(img_art, width=400)   
 
 if __name__ == "__main__":
   main()
