@@ -7,9 +7,9 @@ from PIL import Image,ImageFile
 import numpy as np
 import requests
 from io import BytesIO
-from streamlit_component_square_fill_cropper101 import fill_square_cropper
+from streamlit_component_fill_square_cropper101 import fill_square_cropper
 
-streamlit_component_square_fill_cropper101._DEBUG = True
+#streamlit_component_fill_square_cropper101._DEBUG = True
 
 def local_css(file_name):
     with open(file_name) as f:
@@ -105,4 +105,5 @@ def main() -> None:
      generated_img = fill_square_cropper(img)
      st.image(generated_img)
 
-main()
+if __name__ == "__main__":
+  main()
