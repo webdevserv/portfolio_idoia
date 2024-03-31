@@ -2,7 +2,6 @@
 @author: idoia lerchundi
 """
 import streamlit as st
-import urllib.request
 from PIL import Image,ImageFile
 import numpy as np
 import requests
