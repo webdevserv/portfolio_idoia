@@ -13,5 +13,5 @@ torchvision==0.8.2
 fastai==2.2.5
 pathlib
 streamlit-extras
-square-fill-cropper
+streamlit-component-square-fill-cropper101
 yfinance
