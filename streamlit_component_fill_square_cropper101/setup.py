@@ -14,7 +14,7 @@ def readme() -> str:
 
 setuptools.setup(
     name="streamlit_component_fill_square_cropper101",
-    version="0.0.5",
+    version="0.0.2",
     author="Idoia Lertxundi",
     author_email='idoiagoikoa@gmail.com',
     description="streamlit_component_fill_square_cropper, adds a filler when needed of the avg color pixel.",
