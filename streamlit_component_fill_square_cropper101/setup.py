@@ -2,7 +2,6 @@ from os.path import dirname
 from os.path import join
 import setuptools
 
-
 def readme() -> str:
     """Utility function to read the README file.
     Used for the long_description.  It's nice, because now 1) we have a top

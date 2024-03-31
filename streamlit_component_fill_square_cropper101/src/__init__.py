@@ -1,6 +1,15 @@
+import os
 import streamlit.components.v1 as components
-component_zero = components.declare_component(
-    name='fill_square_cropper',
+
+# Create a _RELEASE constant. We'll set this to False while we're developing
+# the component, and True when we're ready to package and distribute it.
+# (This is, of course, optional - there are innumerable ways to manage your
+# release process.)
+_RELEASE = True
+
+
+streamlit_component_fill_square_cropper101 = components.declare_component(
+    name='streamlit_component_fill_square_cropper101',
     path='./streamlit_component_fill_square_cropper101'
 )
 
