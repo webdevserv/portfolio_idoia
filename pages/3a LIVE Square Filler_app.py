@@ -7,7 +7,8 @@ import streamlit as st
 import numpy as np
 import requests
 from io import BytesIO
-import streamlit_component_square_fill_cropper101 as scropper
+import streamlit_component_square_fill_cropper101
+from  streamlit_component_square_fill_cropper101 import fill_square_cropper
 
 def local_css(file_name):
     with open(file_name) as f:
@@ -23,7 +24,7 @@ st.image("images/banner.jpg")
 # ---- LOAD
 local_css("styles/style.css")
 
-#def fill_square_image(img):
+#def fill_square_cropper(img):
 #    imgsz = [img.height, img.width]
 
 #    original_size = imgsz
@@ -80,14 +81,14 @@ with tab1:
     img = Image.open(BytesIO(response.content))
     img.load()
 
-    generated_img = scropper.fill_square_image(img)
+    generated_img = fill_square_cropper(img)
     st.image(generated_img)
 
     response = requests.get(url2)
     img = Image.open(BytesIO(response.content))
     img.load()
 
-    generated_img = scropper.fill_square_image(img)
+    generated_img = fill_square_cropper(img)
     st.image(generated_img)
    
 with tab2:
@@ -98,5 +99,5 @@ with tab2:
   if uploaded_file is not None: 
    img = Image.open(uploaded_file)
    img.load()
-   generated_img = scropper.fill_square_image(img)
+   generated_img = fill_square_cropper(img)
    st.image(generated_img)
