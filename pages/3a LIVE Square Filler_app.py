@@ -7,7 +7,6 @@ import streamlit as st
 import numpy as np
 import requests
 from io import BytesIO
-import streamlit_component_square_fill_cropper101
 from  streamlit_component_square_fill_cropper101 import fill_square_cropper
 
 def local_css(file_name):
