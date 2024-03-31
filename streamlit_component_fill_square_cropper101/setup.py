@@ -20,7 +20,7 @@ setuptools.setup(
     description="streamlit_component_fill_square_cropper, adds a filler when needed of the avg color pixel.",
     long_description=readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/webdevserv/streamlit_component_fill_square_cropper",
+    url="https://github.com/webdevserv/streamlit_component_fill_square_cropper101",
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[],
