@@ -19,7 +19,7 @@ if not _RELEASE:
     #_component_func  = components.declare_component("streamlit_component_fill_square_cropper101", path=build_dir)
 
 
-def testfill_square_cropper(img: Image.Image):
+def fill_square_cropper(img: Image.Image):
     imgsz = [img.height, img.width]
 
     original_size = imgsz
