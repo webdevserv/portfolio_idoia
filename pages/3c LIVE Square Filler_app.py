@@ -23,7 +23,6 @@ st.image("images/banner.jpg")
 # ---- LOAD
 local_css("styles/style.css")
 
-
 # ---- TABS
 tab1, tab2 = st.tabs(["Demo","Application"])
 
