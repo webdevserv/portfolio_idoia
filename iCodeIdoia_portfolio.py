@@ -31,7 +31,7 @@ local_css("styles/style.css")
 with st.container():   
  st.write("Welcome to my iCode portfolio, I am a web developer with international experience (London and New York).")
  st.write("On the left sidebar you will find some of the some applications related to images that I have deployed using Streamlit.")
- link_html="""<p><strong>Web:</strong> learn more about <a href="https://webdevserv.github.io/html_bites/dev/web.html" target="_blank">me</a>.</p>"""
+ link_html="""<p><strong>Web:</strong> learn more about <a href="https://webdevserv.github.io/html_bites/dev/webdev.html" target="_blank">me</a>.</p>"""
  st.markdown(link_html, unsafe_allow_html=True)
 
 # ---- TABS
