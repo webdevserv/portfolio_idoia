@@ -24,6 +24,7 @@ with st.container():
     contact_form = """
     <p>Should interested in working together or have any questions about my work, please don’t hesitate <a href="https://live-webdevserv.pantheonsite.io/contact/">to get in touch</a>.
     <a href="https://webdevserv.github.io/html_bites/dev/webdev.html">More info</a>.</p>
+    <div style="margin: 0.75em 0;"><a href="https://www.buymeacoffee.com/Artgen" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a></div>
     <form action="email@disabled.com" method="POST">
         <input type="hidden" name="_captcha" value="false" disabled >
         <input type="text" name="name" placeholder="Name" required disabled>

@@ -26,18 +26,7 @@ with st.spinner("Loading..."):
 
 # ---- LOAD
 local_css("styles/style.css")
-#sidebar
-with st.sidebar:
-        st.image("images/modern.png")
-        st.markdown("---")
-        st.markdown(
-            'Created by <a href="https://webdevserv.github.io/html_bites/dev/webdev.html" target="_blank">webdevserv</a>',
-            unsafe_allow_html=True,
-        )
-        st.markdown(
-            '<div style="margin: 0.75em 0;"><a href="https://www.buymeacoffee.com/Artgen" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a></div>',
-            unsafe_allow_html=True,
-        )
+
 # ---- HEADER 
 with st.container():   
  st.write("Welcome to my iCode portfolio, I am a web developer with international experience (London and New York).")
