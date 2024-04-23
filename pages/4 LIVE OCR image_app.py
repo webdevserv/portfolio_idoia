@@ -23,7 +23,7 @@ st.image("images/banner.jpg")
 # ---- LOAD
 local_css("styles/style.css")
 
-@st.cache_resource
+@st.cache
 def load_model(): 
     reader = ocr.Reader(['en'],model_storage_directory='.')
     return reader 
@@ -45,6 +45,10 @@ with tab1:
     response = requests.get(url)
     img = Image.open(BytesIO(response.content))
     img.load()
+
+    #response = requests.get(url)
+    #img = Image.open(BytesIO(response.content))
+    #img.load() 
 
     with st.spinner("🔄 OCR in process."):
         result = reader.readtext(np.array(img))
