@@ -44,7 +44,7 @@ with tab1:
    if st.button('OCR Demo'):  
     response = requests.get(url)
     img = Image.open(BytesIO(response.content))
-    st.image(input_image) #display image
+    st.image(img) #display image
     img.load()
 
     with st.spinner("🔄 OCR in process."):
@@ -69,7 +69,7 @@ with tab2:
    img.load()
 
    with st.spinner("🔄 OCR in process."):
-        result = reader.readtext(np.array(input_image))
+        result = reader.readtext(np.array(img))
 
         result_text = [] #empty list for results
 
