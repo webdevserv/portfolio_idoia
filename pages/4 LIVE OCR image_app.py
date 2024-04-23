@@ -45,6 +45,7 @@ with tab1:
     response = requests.get(url)
     img = Image.open(BytesIO(response.content))
     img.load()
+    st.image(img) #display image
 
     #response = requests.get(url)
     #img = Image.open(BytesIO(response.content))
@@ -70,6 +71,7 @@ with tab2:
   if uploaded_file is not None: 
    img = Image.open(uploaded_file)
    img.load()
+   st.image(img) #display image
 
    with st.spinner("🔄 OCR in process."):
         result = reader.readtext(np.array(img))
