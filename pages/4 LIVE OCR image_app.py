@@ -36,7 +36,7 @@ tab1, tab2 = st.tabs(["Demo","Application"])
 with tab1:   
    # Handle first image
    
-   url = "https://https://raw.githubusercontent.com/webdevserv/images_video/main/ocr_sample.jpg" 
+   url = "https://raw.githubusercontent.com/webdevserv/images_video/main/ocr_sample.jpg" 
 
    st.subheader("OCR an image demo")
    img_description = st.text('Image text will extracted using OCR.')
@@ -72,7 +72,7 @@ with tab2:
         result = reader.readtext(np.array(input_image))
 
         result_text = [] #empty list for results
-        
+
         for text in result:
             result_text.append(text[1])
 
