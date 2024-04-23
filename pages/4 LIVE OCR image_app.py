@@ -69,8 +69,10 @@ with tab2:
    img.load()
 
    with st.spinner("🔄 OCR in process."):
-        result = reader.readtext(np.array(img))
-        result_text = [] #empty list
+        result = reader.readtext(np.array(input_image))
+
+        result_text = [] #empty list for results
+        
         for text in result:
             result_text.append(text[1])
 
