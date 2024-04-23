@@ -44,7 +44,6 @@ with tab1:
    if st.button('OCR Demo'):  
     response = requests.get(url)
     img = Image.open(BytesIO(response.content))
-    st.image(img) #display image
     img.load()
 
     with st.spinner("🔄 OCR in process."):
