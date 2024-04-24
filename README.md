@@ -1,7 +1,6 @@
 # readme
-Web Developer: [New York, USA](https://live-webdevserv.pantheonsite.io)
 
-**The content of this page changes as technology evolves**, to keep up to date with changes [follow me on GitHub](https://github.com/webdevserv/portfolio_idoia).
+**The content of this page changes from time to time **, to keep up to date with changes [follow me on GitHub](https://github.com/webdevserv/portfolio_idoia) and https://webdevserv.github.io/html_bites/dev/webdev.html.
 
 # portfolio_idoia
 
