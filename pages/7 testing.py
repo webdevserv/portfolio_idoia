@@ -25,7 +25,7 @@ local_css("styles/style.css")
 
 @st.cache_resource
 def load_model(): 
-    reader = ocr.Reader(['en'],model_storage_directory='.')
+    reader = ocr.Reader(['en'],model_storage_directory='.',gpu=False)
     return reader 
 
 reader = load_model() #load model
