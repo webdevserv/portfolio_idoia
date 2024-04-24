@@ -16,3 +16,4 @@ yfinance
 streamlit-extras
 streamlit-component-fill-square-cropper101
 easyocr
+opencv-python-headless
