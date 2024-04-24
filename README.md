@@ -32,13 +32,13 @@ output/.....................output folder
 
 # Instructions
 
-""" make sure streamlit is uptodate """
+make sure streamlit is uptodate  
 pip install streamlit --upgrade
 
-"""go to app folder"""
+go to app folder  
 cd C:\yourpath\portfolio_idoia
 
-""" run the app """
+run the app  
 streamlit run iCode*.py
 OR
 streamlit run id(+tab)
@@ -48,8 +48,8 @@ streamlit run id(+tab)
 check your terminal window and access the application;
 For example:
 
-  Local URL: http://localhost:8501
-  Network URL: http://192.168.7.230:8501
+  Local URL: http://localhost:0001
+  Network URL: http://000.168.7.0000:8501
 
 # install PIP requirements
 
