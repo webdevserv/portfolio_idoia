@@ -5,20 +5,20 @@
 # portfolio_idoia
 
 As ML is an interest of mine, I am creating web apps in streamlit with python code of useful applications. I have an AI degree and I am passionate about web and ML. Django will be also used shortly to deploy some of the models.
+We utilities that I have place in either Hugging Face, Streamlit or Github as part of my portfolio.  
 
-There are three web application demonstrated in the repository:
-
-1.- # Super Resolution app
-
-This application demonstrates how SRGAN model can generate a super-resolution image from a low-resolution input.
-
-2.- # Square and Fill appliaton app
-
+1. **LIVE Deep Zoom image app**
+Allows users to zoom in and explore high-resolution images with ease.
+2. **LIVE Remove Bg app**
+My number 1 useful app. Removes the background from images, making them suitable for various purposes.
+3. **LIVE Square Filler app**
 This utility takes a landscape image and squares it neatly. It uses a color filler as needed.
-
-3.- # Dall-e image creation showcases from OpenAI
-
-Generates Artificial images using the Dall-e application from OpenAI
+4. **LIVE Image 2 OCR**
+Converts text from images into machine-readable text using optical character recognition (OCR).
+5. **LIVE Dalle Image Generator app**
+Creates unique and imaginative images using the DALL-E model.
+6. **LIVE Stock Predictor**
+Predicts stock prices and trends based on historical data.  
 
 File/Folder              | Content
 
