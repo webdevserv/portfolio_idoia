@@ -54,11 +54,3 @@ For example:
 # install PIP requirements
 
 pip install -r portfolio_idoia\requirements.txt
-
-# for Dall-e 
-
-pip install openai
-
-# library streamlit-extras 
-
-pip install streamlit-extras  for streamlit-extras library
