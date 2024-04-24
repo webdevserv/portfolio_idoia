@@ -8,16 +8,16 @@ As ML is an interest of mine, I am creating web apps in streamlit with python co
 We utilities that I have place in either Hugging Face, Streamlit or Github as part of my portfolio.  
 
 1. **LIVE Deep Zoom image app**
-Allows users to zoom in and explore high-resolution images with ease.
+Allows users to zoom in and explore high-resolution images with ease.[https://webdevserv-portfolio-idoia-icodeidoia-portfolio-9kblei.streamlit.app/LIVE_Deep_Zoom_image_app]
 2. **LIVE Remove Bg app**
-My number 1 useful app. Removes the background from images, making them suitable for various purposes.
-3. **LIVE Square Filler app**
+My number 1 useful app. Removes the background from images, making them suitable for various purposes. [https://webdevserv-portfolio-idoia-icodeidoia-portfolio-9kblei.streamlit.app/LIVE_Remove_Bg_app]
+3. **LIVE Square Filler app** two flavors one with a streamlit component tha that you pip install the other one without. [https://webdevserv-portfolio-idoia-icodeidoia-portfolio-9kblei.streamlit.app/LIVE_Square_Filler_app]
 This utility takes a landscape image and squares it neatly. It uses a color filler as needed.
-4. **LIVE Image 2 OCR**
+4. **LIVE Image 2 OCR** [https://webdevserv-portfolio-idoia-icodeidoia-portfolio-9kblei.streamlit.app/LIVE_Image_2_OCR]
 Converts text from images into machine-readable text using optical character recognition (OCR).
 5. **LIVE Dalle Image Generator app**
-Creates unique and imaginative images using the DALL-E model.
-6. **LIVE Stock Predictor**
+Creates unique and imaginative images using the DALL-E model. You will need your OpenAI key.
+6. **LIVE Stock Predictor** [https://webdevserv-portfolio-idoia-icodeidoia-portfolio-9kblei.streamlit.app/LIVE_Stock_Predictor]
 Predicts stock prices and trends based on historical data.  
 
 File/Folder              | Content
