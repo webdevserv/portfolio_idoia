@@ -14,7 +14,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 st.set_page_config(
-   page_title="Streamlit iCodeIdoia - OCR an IMAGE - Extract text from an image",
+   page_title="Streamlit iCodeIdoia - Image2OCR Extract text from an image",
    page_icon="images/ilpicon1.png",layout="wide",initial_sidebar_state="expanded"
 )
 
@@ -61,7 +61,7 @@ with tab1:
    
 with tab2:
   st.subheader("OCR an image app")
-  img_description = st.text('Image text will be extracted using OCR.')
+  img_description = st.text('Image text will be extracted using OCR. Warning: It might take an awful long time it is not GPU enabled.')
   uploaded_file = st.file_uploader("Upload a image to OCR.", type=['jpg'])
 
   if uploaded_file is not None: 
