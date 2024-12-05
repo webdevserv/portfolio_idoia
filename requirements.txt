@@ -13,6 +13,7 @@ torchvision
 fastai
 pathlib
 yfinance
+streamlit
 streamlit-extras
 streamlit-component-fill-square-cropper101
 easyocr
