@@ -3,8 +3,8 @@
 """
 from io import BytesIO
 from PIL import Image,ImageFile
-import streamlit as st
 from rembg import remove
+import streamlit as st
 #from io import BytesIO
 
 def local_css(file_name):
