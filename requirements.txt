@@ -10,7 +10,7 @@ plotly
 prophet
 torch
 torchvision
-fastai==2.2.5
+fastai
 pathlib
 yfinance
 streamlit-extras
