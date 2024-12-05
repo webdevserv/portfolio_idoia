@@ -9,7 +9,7 @@ lxml
 plotly
 prophet
 torch
-torchvision==0.8.2
+torchvision
 fastai==2.2.5
 pathlib
 yfinance
